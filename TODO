@@ -1,0 +1,7 @@
+- Add hill protection shit and figure that out
+- Replace AntForce class with utils function to accumulate dispersion 
+- Dispersion implemented for food
+- Try out the bot again and tests as necessary
+- Add fear/territory into the genome
+- Submit bot to ladder
+- Sophisticated logging and visualising dispersion process as game unfolds
