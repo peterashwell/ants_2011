@@ -20,15 +20,12 @@ class GeneticBot:
 	# Called once a turn in ants.py, orders called from here
 	def do_turn(self, ants_instance):
 		sys.stderr.write('rem: ' + str(ants_instance.time_remaining()) + '\n')
-		sys.stderr.flush()
 		self.gs.updateAll(ants_instance)
 		sys.stderr.write('rem (building af): ' + str(ants_instance.time_remaining()) + '\n')
-		sys.stderr.flush()
 
 		# Get the hill protectors to do their business
 		# This is a necessary evil as it would be far messier to screw around with the Genes
 		sys.stderr.write('rem (hill protection...): ' + str(ants_instance.time_remaining()) + '\n')
-		sys.stderr.flush()
 		self.gs.hp.protect(ants_instance, self.gs, self.genome) # does dispersion while staying near the hill
 
 		afs = [] # see Utils.py -> AntForce
@@ -40,13 +37,12 @@ class GeneticBot:
 			row, col = ant_loc
 			afs.append(utils.AntForce(row, col))
 		sys.stderr.write('rem (expressing genome...): ' + str(ants_instance.time_remaining()) + '\n')
-		sys.stderr.flush()
 
 		# Express the genes (not related to hill protectors)
 		for gene in self.genome:
+			sys.stderr.write('rem (expressing gene {0}): '.format(gene.id) + str(ants_instance.time_remaining()) + '\n')
 			gene.express(ants_instance, self.gs, afs)
 		sys.stderr.write('rem (applying forces): ' + str(ants_instance.time_remaining()) + '\n')
-		sys.stderr.flush()
 		
 		# Resolve the forces to produce actions
 		for af in afs:

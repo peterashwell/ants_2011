@@ -98,8 +98,9 @@ def disperse(ants, gs, iters, afs, disp_func):
 	grid = [[0 for i in xrange(ants.cols)] for j in xrange(ants.rows)]
 	for i in xrange(iters):
 		grid = disp_func(ants, gs, grid)
-	#pprintdg(grid, ants)
-	#pprintlm(ants)
+	pprintdg(grid, ants)
+	pprintlm(ants)
+	sys.stderr.flush()
 	# apply dispersion forces to the AntForce objects
 	for af in afs:
 		for d in DIRECTIONS:

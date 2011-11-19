@@ -60,7 +60,7 @@ class ExploreGene(Gene):
 				dirs_used = 0
 				for d in utils.DIRECTIONS:
 					adjrow, adjcol = ants.destination((row, col), d)
-					if ants.passable((adjrow, adjcol)) and not active_func((adjrow, adjcol)):
+					if ants.passable((adjrow, adjcol)) and active_func((adjrow, adjcol)):
 						adjenergy_sum += (grid_old[adjrow][adjcol] - center_energy)
 						dirs_used += 1
 				adjenergy = 0
@@ -104,6 +104,9 @@ class FoodGene(Gene):
 		# Cell energy for unexplored squares is unex_attract
 		for row in xrange(ants_instance.rows):
 			for col in xrange(ants_instance.cols):
+				if not active_func((row, col)):
+					grid_new[row][col] = -1
+					continue
 				if (row, col) in ants_instance.food():
 					grid_new[row][col] = self.params['food_attract']
 					continue
@@ -112,11 +115,12 @@ class FoodGene(Gene):
 				dirs_used = 0
 				for d in utils.DIRECTIONS:
 					adjrow, adjcol = ants_instance.destination((row, col), d)
-					if ants_instance.passable((adjrow, adjcol)):
+					if ants_instance.passable((adjrow, adjcol)) and active_func((adjrow, adjcol)):
 						adjenergy_sum += (grid_old[adjrow][adjcol] - grid_old[row][col])
 						dirs_used += 1
+				adjenergy = 0
 				if dirs_used > 0:
-					adjenergy = adjenergy_sum / float(len(utils.DIRECTIONS))
+					adjenergy = adjenergy_sum / dirs_used
 				##sys.stderr.write('center energy:' + str(center_energy) + '\n')
 				#sys.stderr.write('adj energy:' + str(adjenergy) + '\n')
 				#sys.stderr.write('disp coeff:' + str(self.params['dispersion_coeff']) + '\n')

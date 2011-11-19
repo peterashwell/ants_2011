@@ -49,7 +49,7 @@ class HillProtector:
 			# Express modified genes
 			for gene in genome:
 				# cansee returns True for squares that can see the hill
-				sys.stderr.write('fagassballs: ' + str(ants_instance.viewradius2) + '\n')
+				#sys.stderr.write('fagassballs: ' + str(ants_instance.viewradius2) + '\n')
 				canseehill = lambda ant: utils.canSee(ant, hill, ants_instance.viewradius2)
 				# Get the dispersion field with the restricted dispersion
 				df = gene.express(ants_instance, gs, afs, canseehill)
