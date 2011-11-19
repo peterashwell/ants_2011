@@ -146,8 +146,7 @@ class Ants():
         sys.stdout.flush()
     
     def my_hills(self):
-        return [loc for loc, owner in self.hill_list.items()
-                    if owner == MY_ANT]
+				return [loc for loc, owner in self.hill_list.items() if owner == MY_ANT]
 
     def enemy_hills(self):
         return [(loc, owner) for loc, owner in self.hill_list.items()
