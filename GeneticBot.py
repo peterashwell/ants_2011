@@ -41,7 +41,8 @@ class GeneticBot:
 		# Express the genes (not related to hill protectors)
 		for gene in self.genome:
 			sys.stderr.write('rem (expressing gene {0}): '.format(gene.id) + str(ants_instance.time_remaining()) + '\n')
-			gene.express(ants_instance, self.gs, afs)
+			df = gene.express(ants_instance, self.gs, afs)
+			utils.logdf(gene.id, df, self.gs.turn)
 		sys.stderr.write('rem (applying forces): ' + str(ants_instance.time_remaining()) + '\n')
 		
 		# Resolve the forces to produce actions
@@ -50,6 +51,8 @@ class GeneticBot:
 		sys.stderr.write('rem: ' + str(ants_instance.time_remaining()) + '\n')
 		sys.stderr.flush()
 				
+		self.gs.tickTurn()
+
 if __name__ == '__main__':
 	# psyco will speed up python a little, but is not needed
 	try:

@@ -28,10 +28,9 @@ class GameState:
 			for c in xrange(self.num_cols):
 				if ants_instance.visible((r,c)):
 					self.updateVisible(r,c)
-	
-	# Tick over to next turn
-	def updateTurn(self):
-		self.turn += 1
+
+	def tickTurn(self):
+		self.turn += 1	
 
 	# Visit a square on current turn
 	def updateVisible(self, row, col):

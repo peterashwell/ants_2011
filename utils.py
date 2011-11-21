@@ -1,4 +1,5 @@
 import ants
+import os
 import sys
 
 # Some important statics
@@ -100,12 +101,24 @@ def disperse(ants, gs, iters, afs, disp_func):
 		grid = disp_func(ants, gs, grid)
 	pprintdg(grid, ants)
 	pprintlm(ants)
-	sys.stderr.flush()
+	#sys.stderr.flush()
 	# apply dispersion forces to the AntForce objects
 	for af in afs:
 		for d in DIRECTIONS:
 			dest_x, dest_y = ants.destination(af.getPosition(), d) # see ants.py -> destination
 			af.addForce(d, grid[dest_x][dest_y]) # add force from particular direction
+	return grid
+
+# write the df to a log file
+def logdf(gene_id, df, turn):
+	path = 'dflogs/{0}'.format(gene_id)
+	if not os.path.isdir(path):
+		os.mkdir(path)
+	path = '{0}/{1}.df'.format(path, turn)
+	df_file = open(path, 'w')
+	for row in df:
+		df_file.write(','.join([str(obj) for obj in row]) + '\n')
+	df_file.close()
 
 # Checks is query is visible from center according to current ants instance
 def canSee(center, query, viewradius2):

@@ -24,7 +24,7 @@ class ExploreGene(Gene):
 		self.params =\
 		{\
 			'unex_attract' : 1.0,\
-			'dispersion_coeff' : 1.0,\
+			'dispersion_coeff' : 0.9,\
 			'unex_decay' : 1\
 		}
 	
@@ -34,45 +34,43 @@ class ExploreGene(Gene):
 	# active_func says is a particular square is actually to cause forces
 	def disperse_once(self, ants, gs, grid_old, active_func):
 		# Default cell energy is 0, cell has no attractive force
-		grid_new = [[0 for i in xrange(ants.cols)] for j in xrange(ants.rows)]
+		grid_new = [[-1 for i in xrange(ants.cols)] for j in xrange(ants.rows)]
 		cell_energy = 0
 		# Cell energy for unexplored squares is unex_attract
 		for row in xrange(ants.rows):
 			for col in xrange(ants.cols):
-				if not active_func((row, col)):
-					#sys.stderr.write('made -1 at ({0}, {1})\n'.format(row, col))
-					grid_new[row][col] = -1 # ant should ignore this square
+				if not active_func((row, col)) or not ants.passable((row, col)):
 					continue
-				if not ants.passable((row, col)):
-					continue
+				
+				# Compute the energy for the center square
+				# Square is more attractive the longer it hasn't been seen
 				last_seen = gs.turnsSinceVisible(row, col)
-				if last_seen == 0:
-					center_energy = 0
-				else:
-					# Square is more attractive the longer it hasn't been seen
+				center_energy = 0 # assume center energy is 0 (unless otherwise)
+				if last_seen != 0:
 					center_energy = min(1, self.params['unex_attract']\
 						 * (1.0 - 1.0 / last_seen) ** self.params['unex_decay'])
 					grid_new[row][col] = center_energy
-					continue # skip computing diffusion for this cell
-				# Average influence from adjacent squares
-				#utils.pprintvg(gs)
-				adjenergy_sum = 0
+					#sys.stderr.write('setting center to: ' + str(center_energy) + '\n')
+					continue
+				# Compute the sum of the adjacent squares and how many were used
+				adj_sum = 0
 				dirs_used = 0
 				for d in utils.DIRECTIONS:
 					adjrow, adjcol = ants.destination((row, col), d)
 					if ants.passable((adjrow, adjcol)) and active_func((adjrow, adjcol)):
-						adjenergy_sum += (grid_old[adjrow][adjcol] - center_energy)
+						#sys.stderr.write('inadjsum (go): ' + str(grid_old[adjrow][adjcol]) + '\n')
+						#sys.stderr.write('inadjsum (ce): ' + str(center_energy) + '\n')
+						adj_sum += (grid_old[adjrow][adjcol] - center_energy)
 						dirs_used += 1
 				adjenergy = 0
+				#sys.stderr.write('adj_sum: ' + str(adj_sum) + '\n')
+				#sys.stderr.write('center_energy: ' + str(center_energy) + '\n')
+				#sys.stderr.write('dirs_used:' + str(dirs_used) + '\n')
 				if dirs_used > 0:
-					adjenergy = adjenergy_sum / dirs_used
+					adjenergy = adj_sum / dirs_used
+
 				# Finally compute the energy of the new grid square
 				new_entry = self.params['dispersion_coeff'] * (center_energy + adjenergy)
-				#sys.stderr.write('center energy:' + str(center_energy) + '\n')
-				#sys.stderr.write('adj energy:' + str(adjenergy) + '\n')
-				#sys.stderr.write('disp coeff:' + str(self.params['dispersion_coeff']) + '\n')
-				#sys.stderr.write('new entry: ' + str(new_entry) + '\n')
-				#sys.stderr.flush()
 				grid_new[row][col] = new_entry
 		return grid_new
 
@@ -81,7 +79,6 @@ class ExploreGene(Gene):
 		# include the activity function for the map squares into the dispersion function
 		disperse_func = lambda ants, gs, grid_old : self.disperse_once(ants, gs, grid_old, active_func)
 		return utils.disperse(ants, gs, utils.DISP_ITERS, afs, disperse_func)
-
 
 class FoodGene(Gene):
 	def __init__(self):
@@ -102,6 +99,7 @@ class FoodGene(Gene):
 		grid_new = [[0 for i in xrange(ants_instance.cols)] for j in xrange(ants_instance.rows)]
 		cell_energy = 0
 		# Cell energy for unexplored squares is unex_attract
+		#sys.stderr.write('food locations: ' + str(ants_instance.food()) + '\n')
 		for row in xrange(ants_instance.rows):
 			for col in xrange(ants_instance.cols):
 				if not active_func((row, col)):

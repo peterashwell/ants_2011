@@ -16,10 +16,10 @@ class HillProtector:
 			sys.stderr.write('protector:' + str(protector))
 			self.hill_protectors.append((hill, protector))
 	
-	def findNewProtector(self, ants, hill):
+	def findNewProtector(self, ants_instance, hill):
 		closest = None
 		closest_dist = None
-		for ant in ants.my_ants():
+		for ant in ants_instance.my_ants():
 			distance = (ant[0] - hill[0]) ** 2 + (ant[1] - hill[1]) ** 2
 			if ant in [obj[0] for obj in self.hill_protectors]:
 				continue # ant already assigned as protector
@@ -40,6 +40,7 @@ class HillProtector:
 	# Time in the game that a subset of the ants has to do specific things
 	def protect(self, ants_instance, gs, genome):
 		afs = []
+		sys.stderr.write('hps: ' + str(self.hill_protectors) + '\n')
 		for hill_prot in self.hill_protectors:
 			hill, protector = hill_prot
 			disp_fields = []
@@ -71,13 +72,14 @@ class HillProtector:
 				new_hill_protectors.append((matching_hill, new_pos))
 
 	# Update the hill protectors at new turn (in case they died, or hill died)
-	def updateTurn(self, ants):
+	def updateTurn(self, ants_instance):
 		# check if one died
 		find_new = []
 		for hill_prot in self.hill_protectors:
 			hill, protector = hill_prot
+			sys.stderr.write('hill protector: ' + str(protector) + '\n')
 			found = False
-			for ant in ants.my_ants():
+			for ant in ants_instance.my_ants():
 				if ant == protector:
 					found = True
 			if not found:
@@ -86,7 +88,7 @@ class HillProtector:
 		for hill_prot in self.hill_protectors:
 			hill, protector = hill_prot
 			if protector in find_new:
-				new_hps.append(findNewProtector(hill, ants))
+				new_hps.append((hill, self.findNewProtector(ants_instance, hill)))
 			else:
 				new_hps.append(hill_prot)
 		self.hill_protectors = new_hps
