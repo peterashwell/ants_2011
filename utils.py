@@ -17,6 +17,9 @@ class AntForce:
 			self.forces[d] = 0 
 		self.THRESHOLD = 1e-10
 
+	def __repr__(self):
+		return "AntForce\n" + "r: {0} c: {1}\n".format(self.ant_row, self.ant_col) + str(self.forces)
+
 	def getPosition(self):
 		return (self.ant_row, self.ant_col)
 	

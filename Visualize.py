@@ -86,7 +86,10 @@ class Visualize:
 				for row in xrange(self.map_rows):
 					for col in xrange(self.map_cols):
 						opacity = self.dispersion_maps[gene][self.selected_iteration][row][col] - self.dispersion_mins[gene][self.selected_iteration]
-						opacity = opacity / (self.dispersion_maxs[gene][self.selected_iteration] - self.dispersion_mins[gene][self.selected_iteration])
+						dilution = (self.dispersion_maxs[gene][self.selected_iteration] - self.dispersion_mins[gene][self.selected_iteration])
+
+						if dilution > 1e-10:	
+							opacity = opacity / (self.dispersion_maxs[gene][self.selected_iteration] - self.dispersion_mins[gene][self.selected_iteration])
 						
 						opacity = 255 * opacity
 						#print("val {0}".format(self.dispersion_maps[gene][self.selected_iteration][row][col]))

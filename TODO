@@ -1,3 +1,4 @@
+- Make visibility wrap around when using the HillProtector
 - Properly test and examine hill protector stuff (doesn't seem to be working)
 - Add repulsion between ants to get them to do useful things when there isn't anything to explore etc.
 - Submit bot to ladder

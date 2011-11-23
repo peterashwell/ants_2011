@@ -23,9 +23,9 @@ class ExploreGene(Gene):
 		# Initialize gene parameter(s)
 		self.params =\
 		{\
-			'unex_attract' : 1.0,\
-			'dispersion_coeff' : 0.9,\
-			'unex_decay' : 1\
+			'unex_attract' : 5.0,\
+			'dispersion_coeff' : 0.95,\
+			'unex_decay' : 0.5\
 		}
 	
 	# Dispersion function to use in the grid filling dispersion algorithm
@@ -83,12 +83,12 @@ class ExploreGene(Gene):
 class FoodGene(Gene):
 	def __init__(self):
 		# Set up super class
-		Gene.__init__(self, 'food', 1, ['food_attract'])
+		Gene.__init__(self, 'food', 1, ['food_attract', 'food_dispersion'])
 			
 		# Initialize gene parameter(s)
 		self.params =\
 		{\
-			'food_attract' : 1.0,\
+			'food_attract' : 10.0,\
 		}
 	
 	# Dispersion function to use in the grid filling dispersion algorithm
