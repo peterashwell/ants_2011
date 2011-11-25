@@ -1,4 +1,7 @@
-- Make visibility wrap around when using the HillProtector
+- Make visibility test wrap around when using the HillProtector
+- C functions called from python or C++ recode?
+- Introduce simple territory concept with repulsive forces
+- Put all sources for dispersion on one map
 - Properly test and examine hill protector stuff (doesn't seem to be working)
 - Add repulsion between ants to get them to do useful things when there isn't anything to explore etc.
 - Submit bot to ladder

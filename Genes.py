@@ -39,8 +39,9 @@ class ExploreGene(Gene):
 		# Cell energy for unexplored squares is unex_attract
 		for row in xrange(ants.rows):
 			for col in xrange(ants.cols):
+				
 				if not active_func((row, col)) or not ants.passable((row, col)):
-					continue
+					continue # not a cell to be considered
 				
 				# Compute the energy for the center square
 				# Square is more attractive the longer it hasn't been seen
@@ -50,8 +51,7 @@ class ExploreGene(Gene):
 					center_energy = min(1, self.params['unex_attract']\
 						 * (1.0 - 1.0 / last_seen) ** self.params['unex_decay'])
 					grid_new[row][col] = center_energy
-					#sys.stderr.write('setting center to: ' + str(center_energy) + '\n')
-					continue
+					continue # cell has constant value (no dispersion required)
 				# Compute the sum of the adjacent squares and how many were used
 				adj_sum = 0
 				dirs_used = 0
