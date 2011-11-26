@@ -5,6 +5,7 @@
 #include "utils/AntManager.h"
 #include "utils/LocalData.h"
 #include "Genome.h"
+#include "genes/Gene.h"
 
 /*
 	This struct represents your bot in the game of Ants
