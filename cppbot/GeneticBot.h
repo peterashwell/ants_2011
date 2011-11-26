@@ -1,6 +1,9 @@
 #ifndef GENETICBOT_H
 #define GENETICBOT_H
 
+#include <string>
+#include <fstream>
+
 #include "utils/State.h"
 #include "utils/AntManager.h"
 #include "utils/LocalData.h"
@@ -28,7 +31,7 @@ struct GeneticBot
 	void makeMoves();	//makes moves for a single turn
 	void endTurn();		//indicates to the engine that it has made its moves
 		
-	void logTime(String message); // logs time elapsed with a message
+	void logTime(string message); // logs time elapsed with a message
 };
 
 #endif GENETICBOT_H

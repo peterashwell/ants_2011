@@ -1,3 +1,5 @@
+#include "../utils/State.h"
+#include "../utils/Location.h"
 #include "ExploreGene.h"
 
 void ExploreGene::disperse_once(State state)
@@ -28,8 +30,12 @@ void ExploreGene::disperse_once(State state)
 
       for(int direction = 0; direction < TDIRECTIONS; ++direction)
       {
+				/* depricated (use getLocation in State.h)
         int adjacent_row = wrap_rows(i + DIRECTIONS[direction][0]);
         int adjacent_col = wrap_cols(j + DIRECTIONS[direction][1]);
+				*/
+				int adjacent_row = state.getLocation(Location(i, j), direction);
+				int adjacent_col = state.getLocation(Location(i, j), direction);
 
         if(!state.grid[adjacent_row][adjacent_col].isWater) // If is passable
         {

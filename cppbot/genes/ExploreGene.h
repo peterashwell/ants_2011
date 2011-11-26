@@ -6,7 +6,7 @@
 using namespace std;
 
 #include "Gene.h"
-#include "State.h"
+#include "../utils/State.h"
 
 class ExploreGene : public Gene
 {
