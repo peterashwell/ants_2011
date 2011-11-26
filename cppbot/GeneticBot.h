@@ -13,25 +13,26 @@
 /*
 	This struct represents your bot in the game of Ants
 */
-struct GeneticBot
+class GeneticBot
 {
-	
-	State state;
-	AntManager antmgr;	// interprets genes and makes moves
-	LocalData local_data;
-	Genome genome;
+	private:
+		State state;
+		AntManager antmgr;	// interprets genes and makes moves
+		LocalData local_data;
+		Genome genome;
 
-	ofstream debug;		// logfile for debugging
-	float time_marker;	// marks times for logTime
+		ofstream debug;		// logfile for debugging
+		float time_marker;	// marks times for logTime
 
-	GeneticBot();
+	public: 
+		GeneticBot();
 
-	void playGame();	//plays a single game of Ants
+		void playGame();	//plays a single game of Ants
 
-	void makeMoves();	//makes moves for a single turn
-	void endTurn();		//indicates to the engine that it has made its moves
-		
-	void logTime(string message); // logs time elapsed with a message
+		void makeMoves();	//makes moves for a single turn
+		void endTurn();		//indicates to the engine that it has made its moves
+
+		void logTime(string message); // logs time elapsed with a message
 };
 
 #endif GENETICBOT_H

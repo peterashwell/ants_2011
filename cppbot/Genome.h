@@ -8,14 +8,15 @@ struct Genome {
 	static const int NUM_GENES = 1;
 
 	public:
-		Genome(State s);
+		initGenes(State s);
 		~Genome();
 		std::vector<Gene*> genes;
 		void express(State s, AntManager am); // Express all genes
 };
 
 /* GENOME IS DEFINED HERE */
-Genome::Genome(State s) {
+
+Genome::initGenes(State s) {
 	genes.push_back(new ExploreGene(s.rows, s.cols));
 }
 

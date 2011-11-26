@@ -5,6 +5,7 @@ using namespace std;
 
 //constructor
 GeneticBot::GeneticBot() {
+	// Redirect stderr and open log file for debugging
 	freopen("errors.txt","w",stderr);
 	debug.open("botlog.txt");
 }
@@ -15,9 +16,9 @@ void GeneticBot::playGame()
 {
 	//reads the game parameters and sets up
 	cin >> state;
-	// redirect stderr to errors.txt file
-	 
+		
 	state.setup();
+	genome.initGenes(state);
 	endTurn();
 
 	//continues making moves while the game is not over
