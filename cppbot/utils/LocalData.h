@@ -15,8 +15,15 @@ struct LocalData {
 	// Keeps track of moves we have made
 	std::vector<std::pair<Location, Location> > moves;
 	bool passable(Location loc, State s); // Tests is a square is okay to move to
+	void prepare(); // Prepare for new turn
+
 	// TODO food history
 };
+
+void LocalData::prepare() {
+	moves.clear();
+}
+
 
 /* Return true if
  *  1) Not water

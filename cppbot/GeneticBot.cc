@@ -1,5 +1,9 @@
+#include <iostream>
+#include <string>
+
+#include "utils/State.h"
+#include "utils/AntManager.h"
 #include "GeneticBot.h"
-#include <stdio.h>
 
 using namespace std;
 
@@ -33,22 +37,14 @@ void GeneticBot::playGame()
 		
 		// Prepare local data for the coming turn
 		local_data.prepare();
-		antmgr.prepare()
+		antmgr.prepare(state);
 		// Use the AntManager to gather move data from genes, battles etc.
 		genome.express(state, antmgr);
 		logTime("expressing all genes");
 		//handleBattles(state, antboss); // TODO 
-		antmgr.resolve_forces(); // Issue orders for ants
+		antmgr.resolve_forces(state, local_data); // Issue orders for ants
 		logTime("resolving forces");
 		endTurn();
-	}
-};
-
-//makes the bots moves for the turn
-void GeneticBot::expressGenes()
-{
-	for (int g = 0; g < num_genes, g++) {
-		genome[g].express(state)
 	}
 };
 
@@ -65,7 +61,7 @@ void GeneticBot::endTurn()
 	cout << "go" << endl;
 };
 
-void GeneticBot::logTime(String message) {
+void GeneticBot::logTime(string message) {
 	float new_time = state.timer.getTime();
 	debug << message << " " << new_time - time_marker << "ms" << endl;
 	time_marker = new_time;

@@ -1,5 +1,5 @@
-#ifndef STATE_H_
-#define STATE_H_
+#ifndef STATE_H
+#define STATE_H
 
 #include <iostream>
 #include <stdio.h>
@@ -48,7 +48,6 @@ struct State
         Functions
     */
     State();
-    ~State();
 
     void setup();
     void reset();

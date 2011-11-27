@@ -7,13 +7,7 @@ State::State()
 {
     gameover = 0;
     turn = 0;
-    bug.open("./debug.txt");
-};
-
-//deconstructor
-State::~State()
-{
-    bug.close();
+    //bug.open("./debug.txt");
 };
 
 //sets the state up
