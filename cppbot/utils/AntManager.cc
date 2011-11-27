@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void AntManager::prepare(State s) {
+void AntManager::newTurn(State& s) {
 	float default_forces[4] = {0.0, 0.0, 0.0, 0.0};
 	for (int antnum = 0; antnum < s.myAnts.size(); antnum++) {
 		vector<float> new_vec;
@@ -17,7 +17,7 @@ void AntManager::prepare(State s) {
 }
 
 // Apply a whole dispersion field to each of our ants
-void AntManager::apply_field(State s, float** df) {
+void AntManager::apply_field(State& s, float** df) {
 	// Apply dispersion field to each ant in turn
 	for (int antnum = 0; antnum < s.myAnts.size(); antnum++) {
 		Location ant_loc = s.myAnts.at(antnum);
@@ -35,7 +35,7 @@ void AntManager::apply_single(std::pair<int, int> ant, int dir) {
 }
 
 // Resolve the forces around each ant to issue an order
-void AntManager::resolve_forces(State s, LocalData ld) {
+void AntManager::resolve_forces(State& s, LocalData& ld) {
 	for (int antnum = 0; antnum < ant_forces.size(); antnum++) {
 		Location ant_loc = s.myAnts.at(antnum); // parallel arrays
 		int best_dir = 0;
@@ -49,7 +49,7 @@ void AntManager::resolve_forces(State s, LocalData ld) {
 		// TODO this needs to be rewritten to recursively call resolve for ants blocking the way
 		if (ld.passable(ant_loc, s)) { // See LocalData.h
 			s.makeMove(ant_loc, best_dir);
-			ld.moves.push_back(pair(ant_loc, s.getLocation(ant_loc, best_dir)));
+			ld.moves.push_back(pair<Location, Location>(ant_loc, s.getLocation(ant_loc, best_dir)));
 		}
 	}
 }

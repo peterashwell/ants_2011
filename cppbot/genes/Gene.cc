@@ -1,4 +1,5 @@
-Gene(string id, int rows, int cols, float default_value = 0.0f)
+#include "Gene.h"
+Gene::Gene(string id, int rows, int cols, float default_value)
 {
 	this->id = id;
 	this->rows = rows;
@@ -19,7 +20,7 @@ Gene(string id, int rows, int cols, float default_value = 0.0f)
 	}
 }
 
-~Gene()
+Gene::~Gene()
 {
 	for(int i = 0; i < rows; ++i)
 	{
@@ -30,10 +31,8 @@ Gene(string id, int rows, int cols, float default_value = 0.0f)
 	delete [] disp_field_prev;
 }
 
-virtual void disperse_once(State state) = 0;
-
 // Switch the dispersion buffers around so we have the prev and curr is to be overwritten
-void swap_disp_buffer()
+void Gene::swap_disp_buffer()
 {
 	float **temp = disp_field_curr;
 	disp_field_curr = disp_field_prev;

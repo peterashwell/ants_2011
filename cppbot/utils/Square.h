@@ -1,5 +1,5 @@
-#ifndef SQUARE_H_
-#define SQUARE_H_
+#ifndef SQUARE_H
+#define SQUARE_H
 
 #include <vector>
 

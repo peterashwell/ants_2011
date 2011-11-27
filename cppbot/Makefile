@@ -1,19 +1,20 @@
 CC=g++
 CFLAGS=-O3 -funroll-loops -c
 LDFLAGS=-O2 -lm
-SOURCES=GeneticBot.cc run.cc utils/State.cc utils/AntManger.cc genes/ExploreGene.cc genes/Gene.cc 
-#OBJECTS=$(addsuffix .o, $(basename ${SOURCES}))
+SOURCES= GeneticBot.cc utils/State.cc utils/AntManager.cc genes/ExploreGene.cc genes/Gene.cc Genome.cc utils/LocalData.cc utils/utils.cc
+OBJECTS=$(addsuffix .o, $(basename ${SOURCES}))
 EXECUTABLE=run
 
 #Uncomment the following to enable debugging
 #CFLAGS+=-g -DDEBUG
 
+g++ -O3 -funroll-loops -c GeneticBot.cc utils/State.cc utils/AntManager.cc genes/ExploreGene.cc genes/Gene.cc Genome.cc utils/LocalData.cc utils/utils.cc
 all: $(OBJECTS) $(EXECUTABLE)
 
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-.cc: *.h
+.cc.o: *.h
 	$(CC) $(CFLAGS) $< -o $@
 
 clean: 

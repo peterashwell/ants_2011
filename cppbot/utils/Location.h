@@ -1,5 +1,5 @@
-#ifndef LOCATION_H_
-#define LOCATION_H_
+#ifndef LOCATION_H
+#define LOCATION_H
 
 /*
     struct for representing locations in the grid.

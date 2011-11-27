@@ -10,9 +10,10 @@ using namespace std;
 class Gene
 {
 	public:
-		void express(State s, AntManager am);
+		virtual void express(State& s, LocalData& ld, AntManager& am) = 0;
 		Gene(string id, int rows, int cols, float default_value = 0.0f);
-		virtual void disperse_once(State state) = 0;
+		~Gene();
+		virtual void disperse_once(State& state, LocalData& local_data) = 0;
 		// Switch the dispersion buffers around so we have the prev and curr is to be overwritten
 		void swap_disp_buffer();
 

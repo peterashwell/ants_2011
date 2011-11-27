@@ -22,7 +22,8 @@ void GeneticBot::playGame()
 	cin >> state;
 		
 	state.setup();
-	genome.initGenes(state);
+	genome.setup(state); // GENES DEFINED HERE
+	local_data.setup(state);	
 	endTurn();
 
 	//continues making moves while the game is not over
@@ -36,10 +37,10 @@ void GeneticBot::playGame()
 		logTime("updating vision data: ");
 		
 		// Prepare local data for the coming turn
-		local_data.prepare();
-		antmgr.prepare(state);
+		local_data.newTurn(state);
+		antmgr.newTurn(state);
 		// Use the AntManager to gather move data from genes, battles etc.
-		genome.express(state, antmgr);
+		genome.express(state, local_data, antmgr);
 		logTime("expressing all genes");
 		//handleBattles(state, antboss); // TODO 
 		antmgr.resolve_forces(state, local_data); // Issue orders for ants

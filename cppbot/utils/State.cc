@@ -1,4 +1,5 @@
 #include "State.h"
+#include "LocalData.h"
 
 using namespace std;
 
