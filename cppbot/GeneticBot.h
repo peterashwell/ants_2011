@@ -21,10 +21,10 @@ class GeneticBot
 		LocalData local_data;
 		Genome genome;
 
-		ofstream debug;		// logfile for debugging
 		float time_marker;	// marks times for logTime
 
 	public: 
+		static ofstream debug;		// logfile for debugging
 		GeneticBot();
 				
 		void playGame();	//plays a single game of Ants

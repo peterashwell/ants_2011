@@ -20,4 +20,4 @@ struct Location
     };
 };
 
-#endif //LOCATION_H_
+#endif

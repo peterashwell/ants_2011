@@ -8,10 +8,13 @@
 using namespace std;
 
 void AntManager::newTurn(State& s) {
+	ant_forces.clear(); // TODO can this be done more efficiently
 	float default_forces[4] = {0.0, 0.0, 0.0, 0.0};
 	for (int antnum = 0; antnum < s.myAnts.size(); antnum++) {
-		vector<float> new_vec;
-		new_vec.assign(default_forces, default_forces + 4);
+		vector<float> new_vec; 
+		for (int d = 0; d < TDIRECTIONS; d++) {
+			new_vec.push_back(0); // just cause it's easy fuck off
+		}
 		ant_forces.push_back(new_vec);
 	}
 }

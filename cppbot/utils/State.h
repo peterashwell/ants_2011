@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <stdio.h>
+#include <fstream>
 #include <cstdlib>
 #include <cmath>
 #include <string>
@@ -10,7 +11,6 @@
 #include <queue>
 #include <stack>
 #include <stdint.h>
-
 #include "Timer.h"
 #include "Square.h"
 #include "Location.h"
@@ -50,7 +50,7 @@ struct State
     State();
 
     void setup();
-    void reset();
+    void reset(std::ofstream& debug);
 
     void makeMove(const Location &loc, int direction);
 
