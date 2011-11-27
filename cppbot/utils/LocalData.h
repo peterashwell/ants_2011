@@ -5,7 +5,6 @@
 
 #include "Location.h"
 #include "State.h"
-#include "utils.cc"
 
 
 /**
@@ -26,7 +25,7 @@ class LocalData {
 		void newTurn(State& s); // update stuff for new turn
 	private:
 		void updateVisibleData(State& s);	
-
+		static const int DEFAULT_TURNS_SINCE_VISIBLE = -100;
 	// TODO food history
 };
 

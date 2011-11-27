@@ -16,7 +16,7 @@ class Gene
 		virtual void disperse_once(State& state, LocalData& local_data) = 0;
 		// Switch the dispersion buffers around so we have the prev and curr is to be overwritten
 		void swap_disp_buffer();
-
+		void dump_current_df(int turn);
 	protected:
 		string id;
 		float **disp_field_curr;

@@ -9,7 +9,6 @@ State::State()
 {
     gameover = 0;
     turn = 0;
-    //bug.open("./debug.txt");
 };
 
 //sets the state up
@@ -19,22 +18,13 @@ void State::setup()
 };
 
 //resets all non-water squares to land and clears the bots ant vector
-void State::reset(ofstream& debug)
+void State::reset()
 {
-		debug << "msgr1" << endl;
-
     myAnts.clear();
-		debug << "msgr2" << endl;
     enemyAnts.clear();
-		debug << "msgr3" << endl;
     myHills.clear();
-		debug << "msgr4" << endl;
     enemyHills.clear();
-		debug << "msgr5" << endl;
     food.clear();
-		debug << "r: " << rows << "c: " << cols << endl;;
-		debug << "sr: " << grid.size()  << endl;
-		debug << "sc: " << grid[0].size() << endl;
     for(int row=0; row<rows; row++)
         for(int col=0; col<cols; col++)
             if(!grid[row][col].isWater)

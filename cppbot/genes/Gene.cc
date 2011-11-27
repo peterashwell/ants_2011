@@ -1,3 +1,5 @@
+#include <sstream>
+#include <fstream>
 #include "Gene.h"
 Gene::Gene(string id, int rows, int cols, float default_value)
 {
@@ -49,4 +51,19 @@ void Gene::swap_disp_buffer()
 		}
 	}
 	*/
+}
+
+void Gene::dump_current_df(int turn) {
+	ofstream out;
+	stringstream fname;
+	fname << "dflogs/" << id << "_" << turn << ".df";		
+	out.open(fname.str().c_str());
+	for (int r = 0; r < rows; ++r) {
+		out << disp_field_curr[r][0];
+		for (int c = 1; c < cols; ++c) {
+			out << "," << disp_field_curr[r][c];
+		}	
+		out << endl;
+	}
+	out.close();
 }

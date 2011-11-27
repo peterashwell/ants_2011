@@ -46,6 +46,7 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 		for (int d = 1; d < TDIRECTIONS; d++) {
 			// TODO is a threshold needed here
 			if (ant_forces.at(antnum)[d] > best_force) {
+				best_force = ant_forces.at(antnum)[d];
 				best_dir = d;
 			}
 		}

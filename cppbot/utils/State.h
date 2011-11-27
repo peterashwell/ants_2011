@@ -50,7 +50,7 @@ struct State
     State();
 
     void setup();
-    void reset(std::ofstream& debug);
+    void reset();
 
     void makeMove(const Location &loc, int direction);
 

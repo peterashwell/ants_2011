@@ -59,13 +59,11 @@ void GeneticBot::playGame()
 void GeneticBot::endTurn()
 {
 	debug << "msg6" << endl;
-	debug.flush();
 	// Reset the state data for next turn
 	if(state.turn > 0)
-		state.reset(debug);
+		state.reset();
 	state.turn++;
 	debug << "msg7" << endl;
-	debug.flush();
 
 	cout << "go" << endl;
 };
