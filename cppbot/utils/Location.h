@@ -1,6 +1,8 @@
 #ifndef LOCATION_H
 #define LOCATION_H
 
+#include <fstream>
+
 /*
     struct for representing locations in the grid.
 */
@@ -19,5 +21,6 @@ struct Location
         col = c;
     };
 };
+
 
 #endif

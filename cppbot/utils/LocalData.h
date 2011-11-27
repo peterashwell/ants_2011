@@ -2,10 +2,11 @@
 #define LOCALDATA_H
 
 #include <vector>
+#include <fstream>
+#include <string>
 
 #include "Location.h"
 #include "State.h"
-
 
 /**
  * Used for storing game data and history not given in State.h
@@ -23,6 +24,7 @@ class LocalData {
 		int turnsSinceSeen(State& s, int row, int col);
 		void setup(State& s); // Set up the LocalData for the remainder of the game
 		void newTurn(State& s); // update stuff for new turn
+		std::string dumpMoves();
 	private:
 		void updateVisibleData(State& s);	
 		static const int DEFAULT_TURNS_SINCE_VISIBLE = -100;

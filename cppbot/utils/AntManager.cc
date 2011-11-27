@@ -4,6 +4,7 @@
 #include "Location.h"
 #include "AntManager.h"
 #include "LocalData.h"
+#include "utils.h"
 
 using namespace std;
 
@@ -39,6 +40,7 @@ void AntManager::apply_single(std::pair<int, int> ant, int dir) {
 
 // Resolve the forces around each ant to issue an order
 void AntManager::resolve_forces(State& s, LocalData& ld) {
+	debug << "stuff" << endl;
 	for (int antnum = 0; antnum < ant_forces.size(); antnum++) {
 		Location ant_loc = s.myAnts.at(antnum); // parallel arrays
 		int best_dir = 0;
@@ -50,6 +52,7 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 				best_dir = d;
 			}
 		}
+		debug << ld.dumpMoves();
 		// TODO this needs to be rewritten to recursively call resolve for ants blocking the way
 		if (ld.passable(ant_loc, s)) { // See LocalData.h
 			s.makeMove(ant_loc, best_dir);

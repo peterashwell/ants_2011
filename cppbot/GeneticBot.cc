@@ -4,7 +4,7 @@
 #include "utils/State.h"
 #include "utils/AntManager.h"
 #include "GeneticBot.h"
-
+#include "utils/utils.h"
 using namespace std;
 
 //constructor
@@ -58,12 +58,10 @@ void GeneticBot::playGame()
 //finishes the turn
 void GeneticBot::endTurn()
 {
-	debug << "msg6" << endl;
 	// Reset the state data for next turn
 	if(state.turn > 0)
 		state.reset();
 	state.turn++;
-	debug << "msg7" << endl;
 
 	cout << "go" << endl;
 };

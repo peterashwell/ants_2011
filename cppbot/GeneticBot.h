@@ -10,7 +10,6 @@
 #include "utils/AntManager.h"
 #include "utils/LocalData.h"
 #include "genes/Gene.h"
-#include "Bug.h"
 
 /*
 	This struct represents your bot in the game of Ants
@@ -22,7 +21,6 @@ class GeneticBot
 		AntManager antmgr;	// interprets genes and makes moves
 		LocalData local_data;
 		Genome genome;
-		Bug debug; // use this stupid thing
 		float time_marker;	// marks times for logTime
 
 	public: 

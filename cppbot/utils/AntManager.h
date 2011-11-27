@@ -6,7 +6,7 @@
 
 #include "State.h"
 #include "LocalData.h"
-
+#include "../Bug.h"
 
 struct AntManager {
 	std::vector<std::vector<float> > ant_forces; // TODO this could be done faster	

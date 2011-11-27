@@ -52,7 +52,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	dump_current_df(state.turn); 
+	//dump_current_df(state.turn); 
 }
 
 void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {

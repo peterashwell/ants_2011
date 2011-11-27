@@ -1,6 +1,10 @@
 #include "LocalData.h"
 #include "State.h"
 #include "Location.h"
+#include "utils.h"
+
+#include <sstream>
+#include <string>
 
 void LocalData::setup(State& s) {
 	num_rows = s.rows;
@@ -64,11 +68,11 @@ bool LocalData::passable(Location& loc, State& s) {
 		std::vector<std::pair<Location, Location> >::iterator move;
 		for (move = moves.begin(); move != moves.end(); move++) {
 			// The cell has been cleared (but possibly reoccupied)
-			if (loc.row == (move->first).row && loc.col == (move->first).col) {
+			if (loc == (move->first)) {
 				have_moved = true;
 			}
 			// The cell has already been occupied by one of our ants
-			if (loc.row == (move->second).row && loc.col == (move->second).col) {
+			if (loc == (move->second)) {
 				return false;
 			}
 		}
@@ -79,4 +83,14 @@ bool LocalData::passable(Location& loc, State& s) {
 	}
 	// There are no impediments to moving to the cell
 	return true;
+}
+
+std::string LocalData::dumpMoves() {
+	std::stringstream out;
+	out << "moves are currently:" << std::endl;
+	for (int m = 0; m < moves.size(); m++) {
+		out << "(" << moves.at(m).first.row << "," << moves.at(m).first.col << ")" << "=>";
+		out << "(" << moves.at(m).second.row << "," << moves.at(m).second.col << ")" << std::endl;
+	}
+	return out.str();
 }
