@@ -28,10 +28,11 @@ void State::reset()
     myHills.clear();
     enemyHills.clear();
     food.clear();
-    for(int row=0; row<rows; row++)
-        for(int col=0; col<cols; col++)
-            if(!grid[row][col].isWater)
-                grid[row][col].reset();
+    for(int row=0; row<rows; row++) {
+        for(int col=0; col<cols; col++) {
+          grid[row][col].reset();
+				}
+		}
 };
 
 //outputs move information to the engine
@@ -81,6 +82,7 @@ void State::updateVisionInformation()
         locQueue.push(sLoc);
 
         std::vector<std::vector<bool> > visited(rows, std::vector<bool>(cols, 0));
+				cerr << "m1 set isVisible " << "(" << sLoc.row << "," << sLoc.col << ")" << endl;
         grid[sLoc.row][sLoc.col].isVisible = 1;
         visited[sLoc.row][sLoc.col] = 1;
 
@@ -95,6 +97,8 @@ void State::updateVisionInformation()
 
                 if(!visited[nLoc.row][nLoc.col] && distance(sLoc, nLoc) <= viewradius)
                 {
+										
+										cerr << "m2 set isVisible " << "(" << nLoc.row << "," << nLoc.col << ")" << endl;
                     grid[nLoc.row][nLoc.col].isVisible = 1;
                     locQueue.push(nLoc);
                 }

@@ -7,7 +7,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 {
 	// Swap the buffer 
 	swap_disp_buffer();
-/*
+	/*
 	cerr << "NIGGER" << endl;
 	for (int r = 0; r < rows; r++) {
 		for (int c = 0; c < cols; c++) {
@@ -22,15 +22,15 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 		}
 		cerr << endl;
 	}
-
+*/
 	cerr << "BANDIT" << endl;
 	for (int r = 0; r < rows; r++) {
 		for (int c = 0; c < cols; c++) {
-			cerr << state.grid[r][c].isVisible << ",";
+			cerr /*<< "(" << r << "," << c << ")"*/ << state.grid[r][c].isVisible << ",";
 		}
 		cerr << endl;
 	}
-*/
+
 
 	for(int i = 0; i < rows; ++i)
 	{
