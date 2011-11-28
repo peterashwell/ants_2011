@@ -40,7 +40,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 				if(!state.grid[adj_row][adj_col].isWater) // If is passable
 				{
 					// TODO check collab diff equation to see if this makes sense
-					adj_sum += disp_field_prev[adj_row][adj_col];
+					adj_sum += disp_field_prev[adj_row][adj_col] - center_energy;
 					++adj_count;
 				}
 			}

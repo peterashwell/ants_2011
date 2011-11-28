@@ -87,6 +87,9 @@ bool LocalData::passable(Location& loc, State& s) {
 
 std::string LocalData::dumpMoves() {
 	std::stringstream out;
+	if (moves.size() == 0) {
+		return "";
+	}
 	out << "moves are currently:" << std::endl;
 	for (int m = 0; m < moves.size(); m++) {
 		out << "(" << moves.at(m).first.row << "," << moves.at(m).first.col << ")" << "=>";
