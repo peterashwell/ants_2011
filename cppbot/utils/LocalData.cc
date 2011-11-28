@@ -69,15 +69,15 @@ bool LocalData::passable(Location& loc, State& s) {
 		// Check if we cleared the cell by moving our ants during the turn
 		bool have_moved = false;
 		vector<pair<Location, Location> >::iterator move;
-		cerr << "checking passable at : " << tostring(loc) << endl;
+		//cerr << "checking passable at : " << tostring(loc) << endl;
 		for (move = moves.begin(); move != moves.end(); move++) {
-			cerr << "checking: " << tostring(move->first) << " " << (loc == move->first) << endl;
+		//	cerr << "checking: " << tostring(move->first) << " " << (loc == move->first) << endl;
 			// The cell has been cleared (but possibly reoccupied)
 			if (loc == (move->first)) {
 				have_moved = true;
 			}
 			// The cell has already been occupied by one of our ants
-			cerr << "checking: " << tostring(move->second) << " " << (loc == move->second) << endl;
+			//cerr << "checking: " << tostring(move->second) << " " << (loc == move->second) << endl;
 			if (loc == (move->second)) {
 				return false;
 			}

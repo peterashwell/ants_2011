@@ -5,6 +5,9 @@ class Visualize:
   def __init__(self):
     pygame.init()
 
+    # Mouse data
+    self.clicked = None
+
     self.black = [  0,  0,  0]
     self.white = [255,255,255]
     self.blue  = [0  ,  0,255]
@@ -95,7 +98,8 @@ class Visualize:
             #print("val {0}".format(self.dispersion_maps[gene][self.selected_iteration][row][col]))
             #print("min {0} max {1}".format(self.dispersion_mins[gene][self.selected_iteration], self.dispersion_maxs[gene][self.selected_iteration]))
             #print(opacity)
-            pygame.draw.rect(surface, self.gene_colours[gene_index] + [opacity], (col * self.grid_size, row * self.grid_size, self.grid_size, self.grid_size))
+            pygame.draw.rect(surface, self.gene_colours[gene_index] + [opacity], \
+              (col * self.grid_size, row * self.grid_size, self.grid_size, self.grid_size))
         self.screen.blit(surface, (0, 0))
         
     pygame.display.update()
@@ -122,6 +126,8 @@ done = False
 v = Visualize()
 
 while done == False:
+  # Get mouse info
+  mouse_pos = pygame.mouse.get_pos()
   for event in pygame.event.get():
     if event.type == QUIT:
       pygame.quit()
@@ -137,7 +143,8 @@ while done == False:
         v.select_iteration(1)
       elif event.key == K_a:
         v.select_iteration(-1)      
-
+    elif event.type == pygame.MOUSEBUTTONDOWN:
+     v.clicked = mouse_pos
     v.render()
         
                              

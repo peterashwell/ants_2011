@@ -35,11 +35,11 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			// Square is more attractive the longer it hasn't been seen
 			int turns_since_seen = local_data.turnsSinceSeen(state, i, j);
 		
-			float center_energy = 0.0f;
+			float center_energy = disp_field_prev[i][j];;
 
 			if(turns_since_seen != 0) // check to see if it is a source of energy
 			{
-				center_energy = /*pow(*/unex_attract * (1.0f - 1.0f / (float)turns_since_seen);//, unex_decay);
+				center_energy = pow(unex_attract * (1.0f - 1.0f / (float)turns_since_seen), unex_decay);
 				center_energy = min(1.0f, center_energy);
 				disp_field_curr[i][j] = center_energy;
 				continue;
@@ -59,7 +59,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 				if((!state.grid[adj_row][adj_col].isWater)) // If is passable
 				{
 					// TODO check collab diff equation to see if this makes sense
-					adj_sum += disp_field_prev[adj_row][adj_col];
+					adj_sum += disp_field_prev[adj_row][adj_col] - center_energy;
 					++adj_count;
 				}
 			}
@@ -71,7 +71,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	//dump_current_df(state.turn); 
+	dump_current_df(state.turn); 
 }
 
 void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {
