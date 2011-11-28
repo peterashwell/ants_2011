@@ -1,126 +1,3405 @@
 TURN 1
-TIME TAKEN: 2.22301ms
+at: (9,65)
+index: 0 force: 0.0109986
+trying to move to: (9,66)
+passable
+moves are currently:
+(9,65)=>(9,66)
+TIME TAKEN: 2.96307ms
 TURN 2
-TIME TAKEN: 2.20203ms
+at: (9,66)
+index: 0 force: 0.120123
+trying to move to: (9,67)
+passable
+moves are currently:
+(9,66)=>(9,67)
+TIME TAKEN: 2.67887ms
 TURN 3
-TIME TAKEN: 2.14791ms
+at: (9,67)
+index: 0 force: 0.262939
+trying to move to: (9,68)
+passable
+moves are currently:
+(9,67)=>(9,68)
+TIME TAKEN: 2.31409ms
 TURN 4
-TIME TAKEN: 2.15697ms
+at: (9,68)
+index: 0 force: 0.400249
+trying to move to: (9,69)
+passable
+moves are currently:
+(9,68)=>(9,69)
+TIME TAKEN: 2.774ms
 TURN 5
-TIME TAKEN: 3.01409ms
+at: (9,69)
+index: 0 force: 0.542126
+trying to move to: (9,70)
+passable
+moves are currently:
+(9,69)=>(9,70)
+TIME TAKEN: 2.30002ms
 TURN 6
-TIME TAKEN: 2.14982ms
+at: (9,70)
+index: 0 force: 0.658288
+trying to move to: (9,71)
+passable
+moves are currently:
+(9,70)=>(9,71)
+TIME TAKEN: 2.25806ms
 TURN 7
-TIME TAKEN: 2.15888ms
+at: (9,71)
+index: 0 force: 0.715964
+trying to move to: (9,72)
+passable
+moves are currently:
+(9,71)=>(9,72)
+TIME TAKEN: 3.057ms
 TURN 8
-TIME TAKEN: 2.14815ms
+at: (9,72)
+index: 0 force: 0.754583
+trying to move to: (9,73)
+passable
+moves are currently:
+(9,72)=>(9,73)
+TIME TAKEN: 2.77805ms
 TURN 9
-TIME TAKEN: 2.23398ms
+at: (9,73)
+index: 0 force: 0.787899
+trying to move to: (9,74)
+passable
+moves are currently:
+(9,73)=>(9,74)
+TIME TAKEN: 2.244ms
 TURN 10
-TIME TAKEN: 2.2409ms
+at: (9,74)
+index: 0 force: 0.821951
+trying to move to: (9,75)
+passable
+moves are currently:
+(9,74)=>(9,75)
+TIME TAKEN: 2.25997ms
 TURN 11
-TIME TAKEN: 2.16889ms
+at: (9,75)
+index: 0 force: 0.849846
+trying to move to: (9,76)
+passable
+moves are currently:
+(9,75)=>(9,76)
+TIME TAKEN: 3.55101ms
 TURN 12
-TIME TAKEN: 2.72202ms
+at: (9,76)
+index: 0 force: 0.865701
+trying to move to: (9,77)
+passable
+moves are currently:
+(9,76)=>(9,77)
+TIME TAKEN: 2.28095ms
 TURN 13
-TIME TAKEN: 2.15888ms
+at: (9,77)
+index: 0 force: 0.870997
+trying to move to: (9,78)
+passable
+moves are currently:
+(9,77)=>(9,78)
+TIME TAKEN: 4.2088ms
 TURN 14
-TIME TAKEN: 2.21896ms
+at: (9,78)
+index: 0 force: 0.864534
+trying to move to: (9,79)
+passable
+moves are currently:
+(9,78)=>(9,79)
+TIME TAKEN: 2.424ms
 TURN 15
-TIME TAKEN: 2.78401ms
+at: (9,79)
+index: 0 force: 0.846843
+trying to move to: (8,79)
+passable
+moves are currently:
+(9,79)=>(8,79)
+TIME TAKEN: 2.30598ms
 TURN 16
-TIME TAKEN: 2.16699ms
+at: (8,79)
+index: 0 force: 0.848081
+trying to move to: (7,79)
+passable
+moves are currently:
+(8,79)=>(7,79)
+TIME TAKEN: 2.40111ms
 TURN 17
-TIME TAKEN: 8.22711ms
+at: (7,79)
+index: 0 force: 0.839084
+trying to move to: (7,80)
+passable
+moves are currently:
+(7,79)=>(7,80)
+TIME TAKEN: 2.30289ms
 TURN 18
-TIME TAKEN: 2.14887ms
+at: (7,80)
+index: 0 force: 0.795257
+trying to move to: (7,81)
+passable
+moves are currently:
+(7,80)=>(7,81)
+TIME TAKEN: 2.27308ms
 TURN 19
-TIME TAKEN: 2.1801ms
+at: (7,81)
+index: 0 force: 0.787146
+trying to move to: (7,82)
+passable
+moves are currently:
+(7,81)=>(7,82)
+TIME TAKEN: 2.249ms
 TURN 20
-TIME TAKEN: 2.86794ms
+at: (7,82)
+index: 0 force: 0.802977
+trying to move to: (6,82)
+passable
+moves are currently:
+(7,82)=>(6,82)
+TIME TAKEN: 2.27404ms
 TURN 21
-TIME TAKEN: 2.17104ms
+at: (6,82)
+index: 0 force: 0.795293
+trying to move to: (6,83)
+passable
+moves are currently:
+(6,82)=>(6,83)
+TIME TAKEN: 2.53296ms
 TURN 22
-TIME TAKEN: 2.15387ms
+at: (6,83)
+index: 0 force: 0.776084
+trying to move to: (5,83)
+passable
+moves are currently:
+(6,83)=>(5,83)
+TIME TAKEN: 2.22492ms
 TURN 23
-TIME TAKEN: 2.13599ms
+at: (5,83)
+index: 0 force: 0.761052
+trying to move to: (4,83)
+passable
+moves are currently:
+(5,83)=>(4,83)
+TIME TAKEN: 2.28786ms
 TURN 24
-TIME TAKEN: 2.16103ms
+at: (4,83)
+index: 0 force: 0.759273
+trying to move to: (3,83)
+passable
+moves are currently:
+(4,83)=>(3,83)
+TIME TAKEN: 2.27404ms
 TURN 25
-TIME TAKEN: 3.03507ms
+at: (3,83)
+index: 0 force: 0.769955
+trying to move to: (2,83)
+passable
+moves are currently:
+(3,83)=>(2,83)
+TIME TAKEN: 5.66792ms
 TURN 26
-TIME TAKEN: 4.83704ms
+at: (2,83)
+index: 0 force: 0.787381
+trying to move to: (1,83)
+passable
+moves are currently:
+(2,83)=>(1,83)
+TIME TAKEN: 3.88694ms
 TURN 27
-TIME TAKEN: 2.20013ms
+at: (1,83)
+index: 0 force: 0.801291
+trying to move to: (0,83)
+passable
+at: (9,65)
+index: 0 force: 0.931403
+trying to move to: (10,65)
+passable
+moves are currently:
+(1,83)=>(0,83)
+(9,65)=>(10,65)
+TIME TAKEN: 2.51603ms
 TURN 28
-TIME TAKEN: 1.97101ms
+at: (0,83)
+index: 0 force: 0.811913
+trying to move to: (59,83)
+passable
+at: (10,65)
+index: 0 force: 0.923533
+trying to move to: (10,64)
+passable
+moves are currently:
+(0,83)=>(59,83)
+(10,65)=>(10,64)
+TIME TAKEN: 2.40207ms
 TURN 29
-TIME TAKEN: 2.11382ms
+at: (10,64)
+index: 0 force: 0.903405
+trying to move to: (11,64)
+passable
+at: (59,83)
+index: 0 force: 0.823411
+trying to move to: (58,83)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(59,83)=>(58,83)
+TIME TAKEN: 8.46505ms
 TURN 30
-TIME TAKEN: 2.22611ms
+at: (9,65)
+index: 0 force: 0.811989
+trying to move to: (10,65)
+passable
+at: (11,64)
+index: 0 force: 0.82161
+trying to move to: (10,64)
+passable
+at: (58,83)
+index: 0 force: 0.835012
+trying to move to: (57,83)
+passable
+moves are currently:
+(9,65)=>(10,65)
+(11,64)=>(10,64)
+(58,83)=>(57,83)
+TIME TAKEN: 2.67291ms
 TURN 31
-TIME TAKEN: 11.3101ms
+at: (10,64)
+index: 0 force: 0.771328
+trying to move to: (11,64)
+passable
+at: (10,65)
+index: 0 force: 0.770688
+trying to move to: (10,64)
+passable
+at: (57,83)
+index: 0 force: 0.842582
+trying to move to: (56,83)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,65)=>(10,64)
+(57,83)=>(56,83)
+TIME TAKEN: 2.774ms
 TURN 32
-TIME TAKEN: 2.15697ms
+at: (10,64)
+index: 0 force: 0.754857
+trying to move to: (11,64)
+passable
+at: (11,64)
+index: 0 force: 0.754216
+trying to move to: (10,64)
+passable
+at: (56,83)
+index: 0 force: 0.849927
+trying to move to: (55,83)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(11,64)=>(10,64)
+(56,83)=>(55,83)
+TIME TAKEN: 2.67601ms
 TURN 33
-TIME TAKEN: 2.72393ms
+at: (10,64)
+index: 0 force: 0.69096
+trying to move to: (11,64)
+passable
+at: (11,64)
+index: 0 force: 0.690155
+trying to move to: (10,64)
+passable
+at: (55,83)
+index: 0 force: 0.861509
+trying to move to: (54,83)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(11,64)=>(10,64)
+(55,83)=>(54,83)
+TIME TAKEN: 5.759ms
 TURN 34
-TIME TAKEN: 2.22921ms
+at: (10,64)
+index: 0 force: 0.645794
+trying to move to: (11,64)
+passable
+at: (11,64)
+index: 0 force: 0.644999
+trying to move to: (10,64)
+passable
+at: (54,83)
+index: 0 force: 0.872434
+trying to move to: (53,83)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(11,64)=>(10,64)
+(54,83)=>(53,83)
+TIME TAKEN: 2.67792ms
 TURN 35
-TIME TAKEN: 2.18391ms
+at: (10,64)
+index: 0 force: 0.636728
+trying to move to: (10,65)
+passable
+at: (11,64)
+index: 0 force: 0.636091
+trying to move to: (11,65)
+passable
+at: (53,83)
+index: 0 force: 0.878697
+trying to move to: (52,83)
+passable
+moves are currently:
+(10,64)=>(10,65)
+(11,64)=>(11,65)
+(53,83)=>(52,83)
+TIME TAKEN: 2.69699ms
 TURN 36
-TIME TAKEN: 2.16103ms
+at: (10,65)
+index: 0 force: 0.651463
+trying to move to: (10,66)
+passable
+at: (11,65)
+index: 0 force: 0.651309
+trying to move to: (11,66)
+passable
+at: (52,83)
+index: 0 force: 0.880675
+trying to move to: (51,83)
+passable
+moves are currently:
+(10,65)=>(10,66)
+(11,65)=>(11,66)
+(52,83)=>(51,83)
+TIME TAKEN: 3.49307ms
 TURN 37
-TIME TAKEN: 3.26705ms
+at: (10,66)
+index: 0 force: 0.688544
+trying to move to: (10,67)
+passable
+at: (11,66)
+index: 0 force: 0.685688
+trying to move to: (11,67)
+passable
+at: (51,83)
+index: 0 force: 0.879491
+trying to move to: (50,83)
+passable
+moves are currently:
+(10,66)=>(10,67)
+(11,66)=>(11,67)
+(51,83)=>(50,83)
+TIME TAKEN: 2.69604ms
 TURN 38
-TIME TAKEN: 2.21491ms
+at: (10,67)
+index: 0 force: 0.729735
+trying to move to: (10,68)
+passable
+at: (11,67)
+index: 0 force: 0.727077
+trying to move to: (11,68)
+passable
+at: (50,83)
+index: 0 force: 0.877544
+trying to move to: (49,83)
+passable
+moves are currently:
+(10,67)=>(10,68)
+(11,67)=>(11,68)
+(50,83)=>(49,83)
+TIME TAKEN: 16.222ms
 TURN 39
-TIME TAKEN: 2.16889ms
+at: (10,68)
+index: 0 force: 0.770832
+trying to move to: (10,69)
+passable
+at: (11,68)
+index: 0 force: 0.77015
+trying to move to: (11,69)
+passable
+at: (49,83)
+index: 0 force: 0.873908
+trying to move to: (48,83)
+passable
+moves are currently:
+(10,68)=>(10,69)
+(11,68)=>(11,69)
+(49,83)=>(48,83)
+TIME TAKEN: 2.72012ms
 TURN 40
-TIME TAKEN: 2.14887ms
+at: (9,65)
+index: 0 force: 0.749789
+trying to move to: (9,66)
+passable
+at: (10,69)
+index: 0 force: 0.806228
+trying to move to: (10,70)
+passable
+at: (11,69)
+index: 0 force: 0.80541
+trying to move to: (11,70)
+passable
+at: (48,83)
+index: 0 force: 0.868644
+trying to move to: (47,83)
+passable
+moves are currently:
+(9,65)=>(9,66)
+(10,69)=>(10,70)
+(11,69)=>(11,70)
+(48,83)=>(47,83)
+TIME TAKEN: 2.86484ms
 TURN 41
-TIME TAKEN: 2.16699ms
+at: (9,66)
+index: 0 force: 0.771925
+trying to move to: (9,67)
+passable
+at: (10,70)
+index: 0 force: 0.833836
+trying to move to: (10,71)
+passable
+at: (11,70)
+index: 0 force: 0.832073
+trying to move to: (11,71)
+passable
+at: (47,83)
+index: 0 force: 0.866885
+trying to move to: (46,83)
+passable
+moves are currently:
+(9,66)=>(9,67)
+(10,70)=>(10,71)
+(11,70)=>(11,71)
+(47,83)=>(46,83)
+TIME TAKEN: 2.87604ms
 TURN 42
-TIME TAKEN: 2.28596ms
+at: (9,67)
+index: 0 force: 0.792795
+trying to move to: (9,68)
+passable
+at: (10,71)
+index: 0 force: 0.85204
+trying to move to: (10,72)
+passable
+at: (11,71)
+index: 0 force: 0.851832
+trying to move to: (11,72)
+passable
+at: (46,83)
+index: 0 force: 0.861805
+trying to move to: (45,83)
+passable
+moves are currently:
+(9,67)=>(9,68)
+(10,71)=>(10,72)
+(11,71)=>(11,72)
+(46,83)=>(45,83)
+TIME TAKEN: 2.85816ms
 TURN 43
-TIME TAKEN: 2.1739ms
+at: (9,68)
+index: 0 force: 0.811328
+trying to move to: (9,69)
+passable
+at: (10,72)
+index: 0 force: 0.866306
+trying to move to: (10,73)
+passable
+at: (11,72)
+index: 0 force: 0.867281
+trying to move to: (11,73)
+passable
+at: (45,83)
+index: 0 force: 0.854283
+trying to move to: (44,83)
+passable
+moves are currently:
+(9,68)=>(9,69)
+(10,72)=>(10,73)
+(11,72)=>(11,73)
+(45,83)=>(44,83)
+TIME TAKEN: 3.46184ms
 TURN 44
-TIME TAKEN: 8.52394ms
+at: (9,69)
+index: 0 force: 0.830469
+trying to move to: (9,70)
+passable
+at: (10,73)
+index: 0 force: 0.879428
+trying to move to: (10,74)
+passable
+at: (11,73)
+index: 0 force: 0.881438
+trying to move to: (11,74)
+passable
+at: (44,83)
+index: 0 force: 0.847642
+trying to move to: (43,83)
+passable
+moves are currently:
+(9,69)=>(9,70)
+(10,73)=>(10,74)
+(11,73)=>(11,74)
+(44,83)=>(43,83)
+TIME TAKEN: 3.9351ms
 TURN 45
-TIME TAKEN: 2.141ms
+at: (9,70)
+index: 0 force: 0.843454
+trying to move to: (9,71)
+passable
+at: (10,74)
+index: 0 force: 0.891223
+trying to move to: (10,75)
+passable
+at: (11,74)
+index: 0 force: 0.896008
+trying to move to: (11,75)
+passable
+at: (43,83)
+index: 0 force: 0.840918
+trying to move to: (42,83)
+passable
+moves are currently:
+(9,70)=>(9,71)
+(10,74)=>(10,75)
+(11,74)=>(11,75)
+(43,83)=>(42,83)
+TIME TAKEN: 3.17693ms
 TURN 46
-TIME TAKEN: 2.14815ms
+at: (9,71)
+index: 0 force: 0.8465
+trying to move to: (9,72)
+passable
+at: (10,75)
+index: 0 force: 0.899145
+trying to move to: (10,76)
+passable
+at: (11,75)
+index: 0 force: 0.901876
+trying to move to: (11,76)
+passable
+at: (42,83)
+index: 0 force: 0.833405
+trying to move to: (41,83)
+passable
+moves are currently:
+(9,71)=>(9,72)
+(10,75)=>(10,76)
+(11,75)=>(11,76)
+(42,83)=>(41,83)
+TIME TAKEN: 2.90394ms
 TURN 47
-TIME TAKEN: 2.74491ms
+at: (9,72)
+index: 0 force: 0.84636
+trying to move to: (9,73)
+passable
+at: (10,76)
+index: 0 force: 0.902209
+trying to move to: (10,77)
+passable
+at: (11,76)
+index: 0 force: 0.902522
+trying to move to: (11,77)
+passable
+at: (41,83)
+index: 0 force: 0.830198
+trying to move to: (40,83)
+passable
+moves are currently:
+(9,72)=>(9,73)
+(10,76)=>(10,77)
+(11,76)=>(11,77)
+(41,83)=>(40,83)
+TIME TAKEN: 2.85101ms
 TURN 48
-TIME TAKEN: 3.60799ms
+at: (9,73)
+index: 0 force: 0.845178
+trying to move to: (9,74)
+passable
+at: (10,77)
+index: 0 force: 0.9024
+trying to move to: (10,78)
+passable
+at: (11,77)
+index: 0 force: 0.900596
+trying to move to: (11,78)
+passable
+at: (40,83)
+index: 0 force: 0.833468
+trying to move to: (39,83)
+passable
+moves are currently:
+(9,73)=>(9,74)
+(10,77)=>(10,78)
+(11,77)=>(11,78)
+(40,83)=>(39,83)
+TIME TAKEN: 2.96092ms
 TURN 49
-TIME TAKEN: 2.17581ms
+at: (9,74)
+index: 0 force: 0.844214
+trying to move to: (9,75)
+passable
+at: (10,78)
+index: 0 force: 0.901073
+trying to move to: (10,79)
+passable
+at: (11,78)
+index: 0 force: 0.89845
+trying to move to: (11,79)
+passable
+at: (39,83)
+index: 0 force: 0.841103
+trying to move to: (38,83)
+passable
+moves are currently:
+(9,74)=>(9,75)
+(10,78)=>(10,79)
+(11,78)=>(11,79)
+(39,83)=>(38,83)
+TIME TAKEN: 3.38793ms
 TURN 50
-TIME TAKEN: 2.84815ms
+at: (9,65)
+index: 0 force: 0.367592
+trying to move to: (9,66)
+passable
+at: (9,75)
+index: 0 force: 0.841324
+trying to move to: (9,76)
+passable
+at: (10,79)
+index: 0 force: 0.903379
+trying to move to: (10,80)
+passable
+at: (11,79)
+index: 0 force: 0.902321
+trying to move to: (11,80)
+passable
+at: (38,83)
+index: 0 force: 0.84798
+trying to move to: (37,83)
+passable
+moves are currently:
+(9,65)=>(9,66)
+(9,75)=>(9,76)
+(10,79)=>(10,80)
+(11,79)=>(11,80)
+(38,83)=>(37,83)
+TIME TAKEN: 3.57819ms
 TURN 51
-TIME TAKEN: 7.67899ms
+at: (9,66)
+index: 0 force: 0.44128
+trying to move to: (9,67)
+passable
+at: (9,76)
+index: 0 force: 0.840989
+trying to move to: (9,77)
+passable
+at: (10,80)
+index: 0 force: 0.908318
+trying to move to: (10,81)
+passable
+at: (11,80)
+index: 0 force: 0.907901
+trying to move to: (11,81)
+passable
+at: (37,83)
+index: 0 force: 0.85437
+trying to move to: (36,83)
+passable
+moves are currently:
+(9,66)=>(9,67)
+(9,76)=>(9,77)
+(10,80)=>(10,81)
+(11,80)=>(11,81)
+(37,83)=>(36,83)
+TIME TAKEN: 5.25284ms
 TURN 52
-TIME TAKEN: 2.64215ms
+at: (9,67)
+index: 0 force: 0.494347
+trying to move to: (9,68)
+passable
+at: (9,77)
+index: 0 force: 0.841108
+trying to move to: (9,78)
+passable
+at: (10,81)
+index: 0 force: 0.91673
+trying to move to: (10,82)
+passable
+at: (11,81)
+index: 0 force: 0.915177
+trying to move to: (11,82)
+passable
+at: (36,83)
+index: 0 force: 0.86096
+trying to move to: (35,83)
+passable
+moves are currently:
+(9,67)=>(9,68)
+(9,77)=>(9,78)
+(10,81)=>(10,82)
+(11,81)=>(11,82)
+(36,83)=>(35,83)
+TIME TAKEN: 3.2959ms
 TURN 53
-TIME TAKEN: 2.15816ms
+at: (9,68)
+index: 0 force: 0.541501
+trying to move to: (9,69)
+passable
+at: (9,78)
+index: 0 force: 0.836583
+trying to move to: (8,78)
+passable
+at: (10,82)
+index: 0 force: 0.918408
+trying to move to: (10,83)
+passable
+at: (11,82)
+index: 0 force: 0.914913
+trying to move to: (11,83)
+passable
+at: (35,83)
+index: 0 force: 0.86878
+trying to move to: (34,83)
+passable
+moves are currently:
+(9,68)=>(9,69)
+(9,78)=>(8,78)
+(10,82)=>(10,83)
+(11,82)=>(11,83)
+(35,83)=>(34,83)
+TIME TAKEN: 3.14593ms
 TURN 54
-TIME TAKEN: 2.14601ms
+at: (8,78)
+index: 0 force: 0.842802
+trying to move to: (7,78)
+passable
+at: (9,69)
+index: 0 force: 0.59407
+trying to move to: (9,70)
+passable
+at: (10,83)
+index: 0 force: 0.917771
+trying to move to: (10,84)
+passable
+at: (11,83)
+index: 0 force: 0.912936
+trying to move to: (11,84)
+passable
+at: (34,83)
+index: 0 force: 0.87697
+trying to move to: (33,83)
+passable
+moves are currently:
+(8,78)=>(7,78)
+(9,69)=>(9,70)
+(10,83)=>(10,84)
+(11,83)=>(11,84)
+(34,83)=>(33,83)
+TIME TAKEN: 3.28207ms
 TURN 55
-TIME TAKEN: 2.15602ms
+at: (7,78)
+index: 0 force: 0.84861
+trying to move to: (6,78)
+passable
+at: (9,70)
+index: 0 force: 0.63616
+trying to move to: (9,71)
+passable
+at: (11,84)
+index: 0 force: 0.908789
+trying to move to: (11,85)
+passable
+at: (33,83)
+index: 0 force: 0.882336
+trying to move to: (32,83)
+passable
+moves are currently:
+(7,78)=>(6,78)
+(9,70)=>(9,71)
+(11,84)=>(11,85)
+(33,83)=>(32,83)
+TIME TAKEN: 5.43904ms
 TURN 56
-TIME TAKEN: 2.44808ms
+at: (6,78)
+index: 0 force: 0.855023
+trying to move to: (5,78)
+passable
+at: (9,71)
+index: 0 force: 0.652811
+trying to move to: (9,72)
+passable
+at: (11,85)
+index: 0 force: 0.900689
+trying to move to: (11,86)
+passable
+at: (32,83)
+index: 0 force: 0.884803
+trying to move to: (31,83)
+passable
+moves are currently:
+(6,78)=>(5,78)
+(9,71)=>(9,72)
+(11,85)=>(11,86)
+(32,83)=>(31,83)
+TIME TAKEN: 3.34692ms
 TURN 57
-TIME TAKEN: 2.2409ms
+at: (5,78)
+index: 0 force: 0.858725
+trying to move to: (4,78)
+passable
+at: (9,72)
+index: 0 force: 0.653908
+trying to move to: (9,73)
+passable
+at: (11,86)
+index: 0 force: 0.904623
+trying to move to: (11,87)
+passable
+at: (31,83)
+index: 0 force: 0.882905
+trying to move to: (30,83)
+passable
+moves are currently:
+(5,78)=>(4,78)
+(9,72)=>(9,73)
+(11,86)=>(11,87)
+(31,83)=>(30,83)
+TIME TAKEN: 5.08285ms
 TURN 58
-TIME TAKEN: 2.14887ms
+at: (4,78)
+index: 0 force: 0.864076
+trying to move to: (3,78)
+passable
+at: (9,73)
+index: 0 force: 0.651711
+trying to move to: (9,74)
+passable
+moves are currently:
+(4,78)=>(3,78)
+(9,73)=>(9,74)
+TIME TAKEN: 2.43902ms
 TURN 59
-TIME TAKEN: 2.43807ms
+at: (3,78)
+index: 0 force: 0.866456
+trying to move to: (2,78)
+passable
+at: (9,74)
+index: 0 force: 0.626352
+trying to move to: (9,75)
+passable
+moves are currently:
+(3,78)=>(2,78)
+(9,74)=>(9,75)
+TIME TAKEN: 2.45094ms
 TURN 60
-TIME TAKEN: 2.37584ms
+at: (2,78)
+index: 0 force: 0.869032
+trying to move to: (1,78)
+passable
+at: (9,75)
+index: 0 force: 0.611154
+trying to move to: (9,76)
+passable
+moves are currently:
+(2,78)=>(1,78)
+(9,75)=>(9,76)
+TIME TAKEN: 2.53892ms
 TURN 61
-TIME TAKEN: 2.15888ms
+at: (1,78)
+index: 0 force: 0.869942
+trying to move to: (0,78)
+passable
+at: (9,65)
+index: 0 force: 0.242989
+trying to move to: (9,66)
+passable
+at: (9,76)
+index: 0 force: 0.6088
+trying to move to: (9,77)
+passable
+moves are currently:
+(1,78)=>(0,78)
+(9,65)=>(9,66)
+(9,76)=>(9,77)
+TIME TAKEN: 2.91395ms
 TURN 62
-TIME TAKEN: 2.17104ms
+at: (0,78)
+index: 0 force: 0.870113
+trying to move to: (59,78)
+passable
+at: (9,66)
+index: 0 force: 0.287607
+trying to move to: (9,67)
+passable
+at: (9,77)
+index: 0 force: 0.61985
+trying to move to: (9,78)
+passable
+moves are currently:
+(0,78)=>(59,78)
+(9,66)=>(9,67)
+(9,77)=>(9,78)
+TIME TAKEN: 2.79808ms
 TURN 63
-TIME TAKEN: 2.29788ms
+at: (9,67)
+index: 0 force: 0.329258
+trying to move to: (9,68)
+passable
+at: (9,78)
+index: 0 force: 0.636833
+trying to move to: (9,79)
+passable
+at: (59,78)
+index: 0 force: 0.873026
+trying to move to: (58,78)
+passable
+moves are currently:
+(9,67)=>(9,68)
+(9,78)=>(9,79)
+(59,78)=>(58,78)
+TIME TAKEN: 3.14808ms
+TURN 64
+at: (9,68)
+index: 0 force: 0.372832
+trying to move to: (9,69)
+passable
+at: (9,79)
+index: 0 force: 0.655375
+trying to move to: (10,79)
+passable
+at: (58,78)
+index: 0 force: 0.8805
+trying to move to: (57,78)
+passable
+moves are currently:
+(9,68)=>(9,69)
+(9,79)=>(10,79)
+(58,78)=>(57,78)
+TIME TAKEN: 2.81692ms
+TURN 65
+at: (9,69)
+index: 0 force: 0.42964
+trying to move to: (9,70)
+passable
+at: (10,79)
+index: 0 force: 0.687229
+trying to move to: (10,80)
+passable
+at: (57,78)
+index: 0 force: 0.888244
+trying to move to: (56,78)
+passable
+moves are currently:
+(9,69)=>(9,70)
+(10,79)=>(10,80)
+(57,78)=>(56,78)
+TIME TAKEN: 3.76511ms
+TURN 66
+at: (9,70)
+index: 0 force: 0.488012
+trying to move to: (9,71)
+passable
+at: (10,80)
+index: 0 force: 0.715189
+trying to move to: (10,81)
+passable
+at: (56,78)
+index: 0 force: 0.896522
+trying to move to: (55,78)
+passable
+moves are currently:
+(9,70)=>(9,71)
+(10,80)=>(10,81)
+(56,78)=>(55,78)
+TIME TAKEN: 2.80809ms
+TURN 67
+at: (9,71)
+index: 0 force: 0.525169
+trying to move to: (9,72)
+passable
+at: (10,81)
+index: 0 force: 0.737863
+trying to move to: (10,82)
+passable
+at: (55,78)
+index: 0 force: 0.906139
+trying to move to: (54,78)
+passable
+moves are currently:
+(9,71)=>(9,72)
+(10,81)=>(10,82)
+(55,78)=>(54,78)
+TIME TAKEN: 3.00598ms
+TURN 68
+at: (9,72)
+index: 0 force: 0.548535
+trying to move to: (9,73)
+passable
+at: (10,82)
+index: 0 force: 0.753974
+trying to move to: (10,83)
+passable
+at: (54,78)
+index: 0 force: 0.912707
+trying to move to: (53,78)
+passable
+moves are currently:
+(9,72)=>(9,73)
+(10,82)=>(10,83)
+(54,78)=>(53,78)
+TIME TAKEN: 2.82598ms
+TURN 69
+at: (9,73)
+index: 0 force: 0.562748
+trying to move to: (9,74)
+passable
+at: (10,83)
+index: 0 force: 0.756218
+trying to move to: (10,84)
+passable
+at: (53,78)
+index: 0 force: 0.91284
+trying to move to: (52,78)
+passable
+moves are currently:
+(9,73)=>(9,74)
+(10,83)=>(10,84)
+(53,78)=>(52,78)
+TIME TAKEN: 2.90203ms
+TURN 70
+at: (9,74)
+index: 0 force: 0.556886
+trying to move to: (9,75)
+passable
+at: (10,84)
+index: 0 force: 0.757596
+trying to move to: (10,85)
+passable
+at: (52,78)
+index: 0 force: 0.905478
+trying to move to: (51,78)
+passable
+moves are currently:
+(9,74)=>(9,75)
+(10,84)=>(10,85)
+(52,78)=>(51,78)
+TIME TAKEN: 3.30091ms
+TURN 71
+at: (9,75)
+index: 0 force: 0.535017
+trying to move to: (9,76)
+passable
+at: (10,85)
+index: 0 force: 0.770017
+trying to move to: (10,86)
+passable
+at: (51,78)
+index: 0 force: 0.892583
+trying to move to: (50,78)
+passable
+moves are currently:
+(9,75)=>(9,76)
+(10,85)=>(10,86)
+(51,78)=>(50,78)
+TIME TAKEN: 3.59893ms
+TURN 72
+at: (9,76)
+index: 0 force: 0.520465
+trying to move to: (9,77)
+passable
+at: (10,86)
+index: 0 force: 0.792656
+trying to move to: (10,87)
+passable
+at: (50,78)
+index: 0 force: 0.879556
+trying to move to: (49,78)
+passable
+moves are currently:
+(9,76)=>(9,77)
+(10,86)=>(10,87)
+(50,78)=>(49,78)
+TIME TAKEN: 2.90179ms
+TURN 73
+at: (9,77)
+index: 0 force: 0.519567
+trying to move to: (9,78)
+passable
+at: (10,87)
+index: 0 force: 0.817004
+trying to move to: (10,88)
+passable
+at: (49,78)
+index: 0 force: 0.865768
+trying to move to: (48,78)
+passable
+moves are currently:
+(9,77)=>(9,78)
+(10,87)=>(10,88)
+(49,78)=>(48,78)
+TIME TAKEN: 7.04193ms
+TURN 74
+at: (9,78)
+index: 0 force: 0.51993
+trying to move to: (9,79)
+passable
+at: (10,88)
+index: 0 force: 0.838223
+trying to move to: (10,89)
+passable
+at: (48,78)
+index: 0 force: 0.852737
+trying to move to: (47,78)
+passable
+moves are currently:
+(9,78)=>(9,79)
+(10,88)=>(10,89)
+(48,78)=>(47,78)
+TIME TAKEN: 2.89607ms
+TURN 75
+at: (9,79)
+index: 0 force: 0.514427
+trying to move to: (8,79)
+passable
+at: (47,78)
+index: 0 force: 0.844397
+trying to move to: (46,78)
+passable
+moves are currently:
+(9,79)=>(8,79)
+(47,78)=>(46,78)
+TIME TAKEN: 2.60496ms
+TURN 76
+at: (8,79)
+index: 0 force: 0.524442
+trying to move to: (7,79)
+passable
+at: (46,78)
+index: 0 force: 0.835347
+trying to move to: (45,78)
+passable
+moves are currently:
+(8,79)=>(7,79)
+(46,78)=>(45,78)
+TIME TAKEN: 3.35002ms
+TURN 77
+at: (7,79)
+index: 0 force: 0.547165
+trying to move to: (6,79)
+passable
+at: (45,78)
+index: 0 force: 0.825122
+trying to move to: (44,78)
+passable
+moves are currently:
+(7,79)=>(6,79)
+(45,78)=>(44,78)
+TIME TAKEN: 2.58112ms
+TURN 78
+at: (6,79)
+index: 0 force: 0.573734
+trying to move to: (5,79)
+passable
+at: (44,78)
+index: 0 force: 0.816221
+trying to move to: (43,78)
+passable
+moves are currently:
+(6,79)=>(5,79)
+(44,78)=>(43,78)
+TIME TAKEN: 4.90499ms
+TURN 79
+at: (5,79)
+index: 0 force: 0.592656
+trying to move to: (4,79)
+passable
+at: (43,78)
+index: 0 force: 0.808071
+trying to move to: (42,78)
+passable
+moves are currently:
+(5,79)=>(4,79)
+(43,78)=>(42,78)
+TIME TAKEN: 2.55013ms
+TURN 80
+at: (4,79)
+index: 0 force: 0.61116
+trying to move to: (3,79)
+passable
+at: (42,78)
+index: 0 force: 0.800524
+trying to move to: (41,78)
+passable
+moves are currently:
+(4,79)=>(3,79)
+(42,78)=>(41,78)
+TIME TAKEN: 2.61903ms
+TURN 81
+at: (3,79)
+index: 0 force: 0.629724
+trying to move to: (2,79)
+passable
+at: (41,78)
+index: 0 force: 0.797688
+trying to move to: (40,78)
+passable
+moves are currently:
+(3,79)=>(2,79)
+(41,78)=>(40,78)
+TIME TAKEN: 2.69699ms
+TURN 82
+at: (2,79)
+index: 0 force: 0.650564
+trying to move to: (1,79)
+passable
+at: (40,78)
+index: 0 force: 0.801596
+trying to move to: (39,78)
+passable
+moves are currently:
+(2,79)=>(1,79)
+(40,78)=>(39,78)
+TIME TAKEN: 2.5351ms
+TURN 83
+at: (1,79)
+index: 0 force: 0.675511
+trying to move to: (0,79)
+passable
+at: (39,78)
+index: 0 force: 0.810336
+trying to move to: (38,78)
+passable
+moves are currently:
+(1,79)=>(0,79)
+(39,78)=>(38,78)
+TIME TAKEN: 2.54583ms
+TURN 84
+at: (0,79)
+index: 0 force: 0.686298
+trying to move to: (59,79)
+passable
+at: (9,65)
+index: 0 force: 0.906321
+trying to move to: (10,65)
+passable
+at: (38,78)
+index: 0 force: 0.818734
+trying to move to: (37,78)
+passable
+moves are currently:
+(0,79)=>(59,79)
+(9,65)=>(10,65)
+(38,78)=>(37,78)
+TIME TAKEN: 2.846ms
+TURN 85
+at: (10,65)
+index: 0 force: 0.870694
+trying to move to: (10,64)
+passable
+at: (37,78)
+index: 0 force: 0.827056
+trying to move to: (36,78)
+passable
+at: (59,79)
+index: 0 force: 0.694693
+trying to move to: (58,79)
+passable
+moves are currently:
+(10,65)=>(10,64)
+(37,78)=>(36,78)
+(59,79)=>(58,79)
+TIME TAKEN: 3.87478ms
+TURN 86
+at: (10,64)
+index: 0 force: 0.822839
+trying to move to: (11,64)
+passable
+at: (36,78)
+index: 0 force: 0.836378
+trying to move to: (35,78)
+passable
+at: (58,79)
+index: 0 force: 0.702667
+trying to move to: (57,79)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(36,78)=>(35,78)
+(58,79)=>(57,79)
+TIME TAKEN: 2.89392ms
+TURN 87
+at: (11,64)
+index: 0 force: 0.742095
+trying to move to: (10,64)
+passable
+at: (35,78)
+index: 0 force: 0.846537
+trying to move to: (34,78)
+passable
+at: (57,79)
+index: 0 force: 0.709987
+trying to move to: (56,79)
+passable
+moves are currently:
+(11,64)=>(10,64)
+(35,78)=>(34,78)
+(57,79)=>(56,79)
+TIME TAKEN: 2.87199ms
+TURN 88
+at: (10,64)
+index: 0 force: 0.680147
+trying to move to: (11,64)
+passable
+at: (34,78)
+index: 0 force: 0.856858
+trying to move to: (33,78)
+passable
+at: (56,79)
+index: 0 force: 0.717903
+trying to move to: (55,79)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(34,78)=>(33,78)
+(56,79)=>(55,79)
+TIME TAKEN: 2.87485ms
+TURN 89
+at: (11,64)
+index: 0 force: 0.661435
+trying to move to: (10,64)
+passable
+at: (33,78)
+index: 0 force: 0.864157
+trying to move to: (32,78)
+passable
+at: (55,79)
+index: 0 force: 0.735726
+trying to move to: (54,79)
+passable
+moves are currently:
+(11,64)=>(10,64)
+(33,78)=>(32,78)
+(55,79)=>(54,79)
+TIME TAKEN: 2.87604ms
+TURN 90
+at: (10,64)
+index: 0 force: 0.653762
+trying to move to: (11,64)
+passable
+at: (32,78)
+index: 0 force: 0.868395
+trying to move to: (31,78)
+passable
+at: (54,79)
+index: 0 force: 0.75471
+trying to move to: (53,79)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(32,78)=>(31,78)
+(54,79)=>(53,79)
+TIME TAKEN: 3.13687ms
+TURN 91
+at: (11,64)
+index: 0 force: 0.663802
+trying to move to: (11,65)
+passable
+at: (31,78)
+index: 0 force: 0.868349
+trying to move to: (30,78)
+passable
+at: (53,79)
+index: 0 force: 0.762063
+trying to move to: (52,79)
+passable
+moves are currently:
+(11,64)=>(11,65)
+(31,78)=>(30,78)
+(53,79)=>(52,79)
+TIME TAKEN: 2.95711ms
+TURN 92
+at: (11,65)
+index: 0 force: 0.671091
+trying to move to: (11,66)
+passable
+at: (30,78)
+index: 0 force: 0.871508
+trying to move to: (29,78)
+passable
+at: (52,79)
+index: 0 force: 0.766317
+trying to move to: (51,79)
+passable
+moves are currently:
+(11,65)=>(11,66)
+(30,78)=>(29,78)
+(52,79)=>(51,79)
+TIME TAKEN: 3.73507ms
+TURN 93
+at: (11,66)
+index: 0 force: 0.697331
+trying to move to: (11,67)
+passable
+at: (29,78)
+index: 0 force: 0.878578
+trying to move to: (28,78)
+passable
+at: (51,79)
+index: 0 force: 0.766718
+trying to move to: (50,79)
+passable
+moves are currently:
+(11,66)=>(11,67)
+(29,78)=>(28,78)
+(51,79)=>(50,79)
+TIME TAKEN: 3.70383ms
+TURN 94
+at: (11,67)
+index: 0 force: 0.730175
+trying to move to: (11,68)
+passable
+at: (28,78)
+index: 0 force: 0.882637
+trying to move to: (27,78)
+passable
+at: (50,79)
+index: 0 force: 0.766083
+trying to move to: (49,79)
+passable
+moves are currently:
+(11,67)=>(11,68)
+(28,78)=>(27,78)
+(50,79)=>(49,79)
+TIME TAKEN: 2.90322ms
+TURN 95
+at: (9,65)
+index: 0 force: 0.732406
+trying to move to: (9,66)
+passable
+at: (11,68)
+index: 0 force: 0.767865
+trying to move to: (11,69)
+passable
+at: (27,78)
+index: 0 force: 0.880627
+trying to move to: (26,78)
+passable
+at: (49,79)
+index: 0 force: 0.76702
+trying to move to: (48,79)
+passable
+moves are currently:
+(9,65)=>(9,66)
+(11,68)=>(11,69)
+(27,78)=>(26,78)
+(49,79)=>(48,79)
+TIME TAKEN: 3.06392ms
+TURN 96
+at: (9,66)
+index: 0 force: 0.756139
+trying to move to: (9,67)
+passable
+at: (11,69)
+index: 0 force: 0.79725
+trying to move to: (11,70)
+passable
+at: (26,78)
+index: 0 force: 0.874465
+trying to move to: (25,78)
+passable
+at: (48,79)
+index: 0 force: 0.75592
+trying to move to: (47,79)
+passable
+moves are currently:
+(9,66)=>(9,67)
+(11,69)=>(11,70)
+(26,78)=>(25,78)
+(48,79)=>(47,79)
+TIME TAKEN: 3.27897ms
+TURN 97
+at: (9,67)
+index: 0 force: 0.776539
+trying to move to: (9,68)
+passable
+at: (11,70)
+index: 0 force: 0.823341
+trying to move to: (11,71)
+passable
+at: (25,78)
+index: 0 force: 0.864638
+trying to move to: (24,78)
+passable
+at: (47,79)
+index: 0 force: 0.755057
+trying to move to: (46,79)
+passable
+moves are currently:
+(9,67)=>(9,68)
+(11,70)=>(11,71)
+(25,78)=>(24,78)
+(47,79)=>(46,79)
+TIME TAKEN: 3.05986ms
+TURN 98
+at: (9,68)
+index: 0 force: 0.79811
+trying to move to: (9,69)
+passable
+at: (11,71)
+index: 0 force: 0.842848
+trying to move to: (11,72)
+passable
+at: (24,78)
+index: 0 force: 0.855148
+trying to move to: (23,78)
+passable
+at: (46,79)
+index: 0 force: 0.745989
+trying to move to: (45,79)
+passable
+moves are currently:
+(9,68)=>(9,69)
+(11,71)=>(11,72)
+(24,78)=>(23,78)
+(46,79)=>(45,79)
+TIME TAKEN: 3.05009ms
+TURN 99
+at: (9,69)
+index: 0 force: 0.818988
+trying to move to: (9,70)
+passable
+at: (11,72)
+index: 0 force: 0.859472
+trying to move to: (11,73)
+passable
+at: (23,78)
+index: 0 force: 0.850679
+trying to move to: (22,78)
+passable
+at: (45,79)
+index: 0 force: 0.733186
+trying to move to: (44,79)
+passable
+moves are currently:
+(9,69)=>(9,70)
+(11,72)=>(11,73)
+(23,78)=>(22,78)
+(45,79)=>(44,79)
+TIME TAKEN: 3.24488ms
+TURN 100
+at: (9,70)
+index: 0 force: 0.834578
+trying to move to: (9,71)
+passable
+at: (11,73)
+index: 0 force: 0.872085
+trying to move to: (11,74)
+passable
+at: (22,78)
+index: 0 force: 0.844656
+trying to move to: (21,78)
+passable
+at: (44,79)
+index: 0 force: 0.719398
+trying to move to: (43,79)
+passable
+moves are currently:
+(9,70)=>(9,71)
+(11,73)=>(11,74)
+(22,78)=>(21,78)
+(44,79)=>(43,79)
+TIME TAKEN: 3.98803ms
+TURN 101
+at: (9,71)
+index: 0 force: 0.832565
+trying to move to: (9,72)
+passable
+at: (21,78)
+index: 0 force: 0.833423
+trying to move to: (20,78)
+passable
+at: (43,79)
+index: 0 force: 0.706045
+trying to move to: (42,79)
+passable
+moves are currently:
+(9,71)=>(9,72)
+(21,78)=>(20,78)
+(43,79)=>(42,79)
+TIME TAKEN: 2.93803ms
+TURN 102
+at: (9,72)
+index: 0 force: 0.796207
+trying to move to: (9,71)
+passable
+at: (20,78)
+index: 0 force: 0.814283
+trying to move to: (19,78)
+passable
+at: (42,79)
+index: 0 force: 0.693668
+trying to move to: (41,79)
+passable
+moves are currently:
+(9,72)=>(9,71)
+(20,78)=>(19,78)
+(42,79)=>(41,79)
+TIME TAKEN: 3.2208ms
+TURN 103
+at: (9,71)
+index: 0 force: 0.782895
+trying to move to: (9,70)
+passable
+at: (19,78)
+index: 0 force: 0.78683
+trying to move to: (18,78)
+passable
+at: (41,79)
+index: 0 force: 0.690841
+trying to move to: (40,79)
+passable
+moves are currently:
+(9,71)=>(9,70)
+(19,78)=>(18,78)
+(41,79)=>(40,79)
+TIME TAKEN: 3.51381ms
+TURN 104
+at: (9,70)
+index: 0 force: 0.779166
+trying to move to: (9,69)
+passable
+at: (18,78)
+index: 0 force: 0.754072
+trying to move to: (17,78)
+passable
+at: (40,79)
+index: 0 force: 0.693145
+trying to move to: (39,79)
+passable
+moves are currently:
+(9,70)=>(9,69)
+(18,78)=>(17,78)
+(40,79)=>(39,79)
+TIME TAKEN: 2.841ms
+TURN 105
+at: (9,69)
+index: 0 force: 0.770123
+trying to move to: (9,68)
+passable
+at: (17,78)
+index: 0 force: 0.721422
+trying to move to: (17,79)
+passable
+at: (39,79)
+index: 0 force: 0.699815
+trying to move to: (38,79)
+passable
+moves are currently:
+(9,69)=>(9,68)
+(17,78)=>(17,79)
+(39,79)=>(38,79)
+TIME TAKEN: 3.78895ms
+TURN 106
+at: (9,68)
+index: 0 force: 0.759716
+trying to move to: (9,67)
+passable
+at: (17,79)
+index: 0 force: 0.701386
+trying to move to: (17,80)
+passable
+at: (38,79)
+index: 0 force: 0.709321
+trying to move to: (37,79)
+passable
+moves are currently:
+(9,68)=>(9,67)
+(17,79)=>(17,80)
+(38,79)=>(37,79)
+TIME TAKEN: 3.61204ms
+TURN 107
+at: (9,67)
+index: 0 force: 0.744417
+trying to move to: (9,66)
+passable
+at: (17,80)
+index: 0 force: 0.699807
+trying to move to: (17,81)
+passable
+at: (37,79)
+index: 0 force: 0.722208
+trying to move to: (36,79)
+passable
+moves are currently:
+(9,67)=>(9,66)
+(17,80)=>(17,81)
+(37,79)=>(36,79)
+TIME TAKEN: 2.87104ms
+TURN 108
+at: (9,66)
+index: 0 force: 0.723065
+trying to move to: (9,65)
+passable
+at: (17,81)
+index: 0 force: 0.715441
+trying to move to: (17,82)
+passable
+at: (36,79)
+index: 0 force: 0.732437
+trying to move to: (35,79)
+passable
+moves are currently:
+(9,66)=>(9,65)
+(17,81)=>(17,82)
+(36,79)=>(35,79)
+TIME TAKEN: 2.88391ms
+TURN 109
+at: (9,65)
+index: 0 force: 0.687268
+trying to move to: (10,65)
+passable
+at: (17,82)
+index: 0 force: 0.735613
+trying to move to: (17,83)
+passable
+at: (35,79)
+index: 0 force: 0.74737
+trying to move to: (34,79)
+passable
+moves are currently:
+(9,65)=>(10,65)
+(17,82)=>(17,83)
+(35,79)=>(34,79)
+TIME TAKEN: 3.63493ms
+TURN 110
+at: (10,65)
+index: 0 force: 0.634516
+trying to move to: (10,64)
+passable
+at: (17,83)
+index: 0 force: 0.754936
+trying to move to: (17,84)
+passable
+at: (34,79)
+index: 0 force: 0.754297
+trying to move to: (33,79)
+passable
+moves are currently:
+(10,65)=>(10,64)
+(17,83)=>(17,84)
+(34,79)=>(33,79)
+TIME TAKEN: 3.67188ms
+TURN 111
+at: (10,64)
+index: 0 force: 0.58568
+trying to move to: (11,64)
+passable
+at: (17,84)
+index: 0 force: 0.782306
+trying to move to: (17,85)
+passable
+at: (33,79)
+index: 0 force: 0.741388
+trying to move to: (32,79)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(17,84)=>(17,85)
+(33,79)=>(32,79)
+TIME TAKEN: 3.88193ms
+TURN 112
+at: (11,64)
+index: 0 force: 0.524602
+trying to move to: (10,64)
+passable
+at: (17,85)
+index: 0 force: 0.80339
+trying to move to: (17,86)
+passable
+at: (32,79)
+index: 0 force: 0.723193
+trying to move to: (31,79)
+passable
+moves are currently:
+(11,64)=>(10,64)
+(17,85)=>(17,86)
+(32,79)=>(31,79)
+TIME TAKEN: 2.89202ms
+TURN 113
+at: (10,64)
+index: 0 force: 0.492969
+trying to move to: (11,64)
+passable
+at: (17,86)
+index: 0 force: 0.822154
+trying to move to: (17,87)
+passable
+at: (31,79)
+index: 0 force: 0.714456
+trying to move to: (31,80)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(17,86)=>(17,87)
+(31,79)=>(31,80)
+TIME TAKEN: 2.87104ms
+TURN 114
+at: (11,64)
+index: 0 force: 0.500113
+trying to move to: (11,65)
+passable
+at: (17,87)
+index: 0 force: 0.848406
+trying to move to: (17,88)
+passable
+at: (31,80)
+index: 0 force: 0.696354
+trying to move to: (31,81)
+passable
+moves are currently:
+(11,64)=>(11,65)
+(17,87)=>(17,88)
+(31,80)=>(31,81)
+TIME TAKEN: 4.55785ms
+TURN 115
+at: (11,65)
+index: 0 force: 0.520508
+trying to move to: (11,66)
+passable
+at: (17,88)
+index: 0 force: 0.865322
+trying to move to: (18,88)
+passable
+at: (31,81)
+index: 0 force: 0.685829
+trying to move to: (31,82)
+passable
+moves are currently:
+(11,65)=>(11,66)
+(17,88)=>(18,88)
+(31,81)=>(31,82)
+TIME TAKEN: 3.80206ms
+TURN 116
+at: (11,66)
+index: 0 force: 0.562224
+trying to move to: (11,67)
+passable
+at: (18,88)
+index: 0 force: 0.871643
+trying to move to: (19,88)
+passable
+at: (31,82)
+index: 0 force: 0.697701
+trying to move to: (31,83)
+passable
+moves are currently:
+(11,66)=>(11,67)
+(18,88)=>(19,88)
+(31,82)=>(31,83)
+TIME TAKEN: 2.86984ms
+TURN 117
+at: (11,67)
+index: 0 force: 0.615078
+trying to move to: (11,68)
+passable
+at: (19,88)
+index: 0 force: 0.865479
+trying to move to: (20,88)
+passable
+at: (31,83)
+index: 0 force: 0.713289
+trying to move to: (31,84)
+passable
+moves are currently:
+(11,67)=>(11,68)
+(19,88)=>(20,88)
+(31,83)=>(31,84)
+TIME TAKEN: 3.45206ms
+TURN 118
+at: (11,68)
+index: 0 force: 0.673664
+trying to move to: (11,69)
+passable
+at: (20,88)
+index: 0 force: 0.845404
+trying to move to: (21,88)
+passable
+at: (31,84)
+index: 0 force: 0.730943
+trying to move to: (31,85)
+passable
+moves are currently:
+(11,68)=>(11,69)
+(20,88)=>(21,88)
+(31,84)=>(31,85)
+TIME TAKEN: 3.6099ms
+TURN 119
+at: (11,69)
+index: 0 force: 0.722156
+trying to move to: (11,70)
+passable
+at: (21,88)
+index: 0 force: 0.815658
+trying to move to: (22,88)
+passable
+at: (31,85)
+index: 0 force: 0.752358
+trying to move to: (31,86)
+passable
+moves are currently:
+(11,69)=>(11,70)
+(21,88)=>(22,88)
+(31,85)=>(31,86)
+TIME TAKEN: 2.81692ms
+TURN 120
+at: (11,70)
+index: 0 force: 0.762646
+trying to move to: (11,71)
+passable
+at: (22,88)
+index: 0 force: 0.77561
+trying to move to: (23,88)
+passable
+at: (31,86)
+index: 0 force: 0.778776
+trying to move to: (31,87)
+passable
+moves are currently:
+(11,70)=>(11,71)
+(22,88)=>(23,88)
+(31,86)=>(31,87)
+TIME TAKEN: 2.79808ms
+TURN 121
+at: (11,71)
+index: 0 force: 0.791676
+trying to move to: (11,72)
+passable
+at: (23,88)
+index: 0 force: 0.742476
+trying to move to: (23,89)
+passable
+at: (31,87)
+index: 0 force: 0.800326
+trying to move to: (31,88)
+passable
+moves are currently:
+(11,71)=>(11,72)
+(23,88)=>(23,89)
+(31,87)=>(31,88)
+TIME TAKEN: 3.4461ms
+TURN 122
+at: (11,72)
+index: 0 force: 0.811702
+trying to move to: (11,73)
+passable
+at: (23,89)
+index: 0 force: 0.707166
+trying to move to: (24,89)
+passable
+at: (31,88)
+index: 0 force: 0.817741
+trying to move to: (31,89)
+passable
+moves are currently:
+(11,72)=>(11,73)
+(23,89)=>(24,89)
+(31,88)=>(31,89)
+TIME TAKEN: 3.34811ms
+TURN 123
+at: (11,73)
+index: 0 force: 0.822887
+trying to move to: (11,74)
+passable
+at: (24,89)
+index: 0 force: 0.690165
+trying to move to: (24,0)
+passable
+moves are currently:
+(11,73)=>(11,74)
+(24,89)=>(24,0)
+TIME TAKEN: 2.92015ms
+TURN 124
+at: (11,74)
+index: 0 force: 0.8264
+trying to move to: (11,75)
+passable
+at: (24,0)
+index: 0 force: 0.682417
+trying to move to: (24,1)
+passable
+moves are currently:
+(11,74)=>(11,75)
+(24,0)=>(24,1)
+TIME TAKEN: 2.563ms
+TURN 125
+at: (11,75)
+index: 0 force: 0.819502
+trying to move to: (11,76)
+passable
+at: (24,1)
+index: 0 force: 0.718232
+trying to move to: (24,2)
+passable
+moves are currently:
+(11,75)=>(11,76)
+(24,1)=>(24,2)
+TIME TAKEN: 2.57421ms
+TURN 126
+at: (11,76)
+index: 0 force: 0.809796
+trying to move to: (11,77)
+passable
+at: (24,2)
+index: 0 force: 0.749017
+trying to move to: (24,3)
+passable
+moves are currently:
+(11,76)=>(11,77)
+(24,2)=>(24,3)
+TIME TAKEN: 2.54822ms
+TURN 127
+at: (11,77)
+index: 0 force: 0.800617
+trying to move to: (11,78)
+passable
+at: (24,3)
+index: 0 force: 0.762445
+trying to move to: (24,4)
+passable
+moves are currently:
+(11,77)=>(11,78)
+(24,3)=>(24,4)
+TIME TAKEN: 2.56491ms
+TURN 128
+at: (24,4)
+index: 0 force: 0.78613
+trying to move to: (24,5)
+passable
+moves are currently:
+(24,4)=>(24,5)
+TIME TAKEN: 2.22111ms
+TURN 129
+at: (24,5)
+index: 0 force: 0.812368
+trying to move to: (24,6)
+passable
+moves are currently:
+(24,5)=>(24,6)
+TIME TAKEN: 2.21992ms
+TURN 130
+at: (9,65)
+index: 0 force: 0.726657
+trying to move to: (10,65)
+passable
+at: (24,6)
+index: 0 force: 0.825569
+trying to move to: (24,7)
+passable
+moves are currently:
+(9,65)=>(10,65)
+(24,6)=>(24,7)
+TIME TAKEN: 3.44992ms
+TURN 131
+at: (10,65)
+index: 0 force: 0.695777
+trying to move to: (10,64)
+passable
+at: (24,7)
+index: 0 force: 0.836486
+trying to move to: (24,8)
+passable
+moves are currently:
+(10,65)=>(10,64)
+(24,7)=>(24,8)
+TIME TAKEN: 2.52414ms
+TURN 132
+at: (10,64)
+index: 0 force: 0.679453
+trying to move to: (11,64)
+passable
+at: (24,8)
+index: 0 force: 0.862378
+trying to move to: (24,9)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(24,8)=>(24,9)
+TIME TAKEN: 2.84386ms
+TURN 133
+at: (11,64)
+index: 0 force: 0.619714
+trying to move to: (10,64)
+passable
+at: (24,9)
+index: 0 force: 0.895418
+trying to move to: (24,10)
+passable
+moves are currently:
+(11,64)=>(10,64)
+(24,9)=>(24,10)
+TIME TAKEN: 2.51102ms
+TURN 134
+at: (10,64)
+index: 0 force: 0.577568
+trying to move to: (11,64)
+passable
+at: (24,10)
+index: 0 force: 0.911239
+trying to move to: (23,10)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(24,10)=>(23,10)
+TIME TAKEN: 3.12495ms
+TURN 135
+at: (11,64)
+index: 0 force: 0.572228
+trying to move to: (11,65)
+passable
+at: (23,10)
+index: 0 force: 0.915202
+trying to move to: (22,10)
+passable
+moves are currently:
+(11,64)=>(11,65)
+(23,10)=>(22,10)
+TIME TAKEN: 2.51007ms
+TURN 136
+at: (11,65)
+index: 0 force: 0.581077
+trying to move to: (11,66)
+passable
+at: (22,10)
+index: 0 force: 0.906434
+trying to move to: (21,10)
+passable
+moves are currently:
+(11,65)=>(11,66)
+(22,10)=>(21,10)
+TIME TAKEN: 3.10016ms
+TURN 137
+at: (11,66)
+index: 0 force: 0.614576
+trying to move to: (11,67)
+passable
+at: (21,10)
+index: 0 force: 0.895744
+trying to move to: (20,10)
+passable
+moves are currently:
+(11,66)=>(11,67)
+(21,10)=>(20,10)
+TIME TAKEN: 2.51794ms
+TURN 138
+at: (11,67)
+index: 0 force: 0.660811
+trying to move to: (11,68)
+passable
+at: (20,10)
+index: 0 force: 0.886489
+trying to move to: (19,10)
+passable
+moves are currently:
+(11,67)=>(11,68)
+(20,10)=>(19,10)
+TIME TAKEN: 2.50483ms
+TURN 139
+at: (11,68)
+index: 0 force: 0.712903
+trying to move to: (11,69)
+passable
+at: (19,10)
+index: 0 force: 0.886448
+trying to move to: (18,10)
+passable
+moves are currently:
+(11,68)=>(11,69)
+(19,10)=>(18,10)
+TIME TAKEN: 2.53105ms
+TURN 140
+at: (11,69)
+index: 0 force: 0.757093
+trying to move to: (11,70)
+passable
+at: (18,10)
+index: 0 force: 0.89734
+trying to move to: (17,10)
+passable
+moves are currently:
+(11,69)=>(11,70)
+(18,10)=>(17,10)
+TIME TAKEN: 2.52914ms
+TURN 141
+at: (11,70)
+index: 0 force: 0.794863
+trying to move to: (11,71)
+passable
+at: (17,10)
+index: 0 force: 0.902407
+trying to move to: (16,10)
+passable
+moves are currently:
+(11,70)=>(11,71)
+(17,10)=>(16,10)
+TIME TAKEN: 2.50912ms
+TURN 142
+at: (11,71)
+index: 0 force: 0.823154
+trying to move to: (11,72)
+passable
+at: (16,10)
+index: 0 force: 0.905595
+trying to move to: (15,10)
+passable
+moves are currently:
+(11,71)=>(11,72)
+(16,10)=>(15,10)
+TIME TAKEN: 3.35908ms
+TURN 143
+at: (11,72)
+index: 0 force: 0.843346
+trying to move to: (11,73)
+passable
+at: (15,10)
+index: 0 force: 0.909675
+trying to move to: (14,10)
+passable
+moves are currently:
+(11,72)=>(11,73)
+(15,10)=>(14,10)
+TIME TAKEN: 2.51102ms
+TURN 144
+at: (11,73)
+index: 0 force: 0.856858
+trying to move to: (11,74)
+passable
+at: (14,10)
+index: 0 force: 0.912459
+trying to move to: (13,10)
+passable
+moves are currently:
+(11,73)=>(11,74)
+(14,10)=>(13,10)
+TIME TAKEN: 2.53201ms
+TURN 145
+at: (11,74)
+index: 0 force: 0.865242
+trying to move to: (11,75)
+passable
+at: (13,10)
+index: 0 force: 0.90887
+trying to move to: (12,10)
+passable
+moves are currently:
+(11,74)=>(11,75)
+(13,10)=>(12,10)
+TIME TAKEN: 2.53177ms
+TURN 146
+at: (11,75)
+index: 0 force: 0.863114
+trying to move to: (11,76)
+passable
+at: (12,10)
+index: 0 force: 0.904934
+trying to move to: (11,10)
+passable
+moves are currently:
+(11,75)=>(11,76)
+(12,10)=>(11,10)
+TIME TAKEN: 2.55203ms
+TURN 147
+at: (11,10)
+index: 0 force: 0.892737
+trying to move to: (10,10)
+passable
+at: (11,76)
+index: 0 force: 0.856671
+trying to move to: (11,77)
+passable
+moves are currently:
+(11,10)=>(10,10)
+(11,76)=>(11,77)
+TIME TAKEN: 2.55513ms
+TURN 148
+at: (10,10)
+index: 0 force: 0.877461
+trying to move to: (9,10)
+passable
+at: (11,77)
+index: 0 force: 0.850294
+trying to move to: (11,78)
+passable
+moves are currently:
+(10,10)=>(9,10)
+(11,77)=>(11,78)
+TIME TAKEN: 2.85101ms
+TURN 149
+at: (9,10)
+index: 0 force: 0.868545
+trying to move to: (8,10)
+passable
+at: (9,65)
+index: 0 force: 0.477458
+trying to move to: (10,65)
+passable
+moves are currently:
+(9,10)=>(8,10)
+(9,65)=>(10,65)
+TIME TAKEN: 2.52891ms
+TURN 150
+at: (8,10)
+index: 0 force: 0.862295
+trying to move to: (7,10)
+passable
+at: (10,65)
+index: 0 force: 0.415797
+trying to move to: (10,64)
+passable
+moves are currently:
+(8,10)=>(7,10)
+(10,65)=>(10,64)
+TIME TAKEN: 2.55799ms
+TURN 151
+at: (7,10)
+index: 0 force: 0.859806
+trying to move to: (6,10)
+passable
+at: (10,64)
+index: 0 force: 0.393825
+trying to move to: (11,64)
+passable
+moves are currently:
+(7,10)=>(6,10)
+(10,64)=>(11,64)
+TIME TAKEN: 2.51889ms
+TURN 152
+at: (6,10)
+index: 0 force: 0.871355
+trying to move to: (5,10)
+passable
+at: (11,64)
+index: 0 force: 0.354151
+trying to move to: (10,64)
+passable
+moves are currently:
+(6,10)=>(5,10)
+(11,64)=>(10,64)
+TIME TAKEN: 2.52295ms
+TURN 153
+at: (5,10)
+index: 0 force: 0.882799
+trying to move to: (5,9)
+passable
+at: (10,64)
+index: 0 force: 0.35041
+trying to move to: (10,65)
+passable
+moves are currently:
+(5,10)=>(5,9)
+(10,64)=>(10,65)
+TIME TAKEN: 2.78902ms
+TURN 154
+at: (5,9)
+index: 0 force: 0.892721
+trying to move to: (5,8)
+passable
+at: (10,65)
+index: 0 force: 0.386984
+trying to move to: (10,66)
+passable
+moves are currently:
+(5,9)=>(5,8)
+(10,65)=>(10,66)
+TIME TAKEN: 2.59781ms
+TURN 155
+at: (5,8)
+index: 0 force: 0.906563
+trying to move to: (5,7)
+passable
+at: (10,66)
+index: 0 force: 0.455306
+trying to move to: (10,67)
+passable
+moves are currently:
+(5,8)=>(5,7)
+(10,66)=>(10,67)
+TIME TAKEN: 3.15714ms
+TURN 156
+at: (5,7)
+index: 0 force: 0.912355
+trying to move to: (5,6)
+passable
+at: (10,67)
+index: 0 force: 0.523939
+trying to move to: (10,68)
+passable
+moves are currently:
+(5,7)=>(5,6)
+(10,67)=>(10,68)
+TIME TAKEN: 3.07202ms
+TURN 157
+at: (5,6)
+index: 0 force: 0.913894
+trying to move to: (5,5)
+passable
+at: (10,68)
+index: 0 force: 0.596393
+trying to move to: (10,69)
+passable
+moves are currently:
+(5,6)=>(5,5)
+(10,68)=>(10,69)
+TIME TAKEN: 3.23677ms
+TURN 158
+at: (5,5)
+index: 0 force: 0.915398
+trying to move to: (5,4)
+passable
+at: (10,69)
+index: 0 force: 0.661833
+trying to move to: (10,70)
+passable
+moves are currently:
+(5,5)=>(5,4)
+(10,69)=>(10,70)
+TIME TAKEN: 2.52986ms
+TURN 159
+at: (5,4)
+index: 0 force: 0.910651
+trying to move to: (5,3)
+passable
+at: (10,70)
+index: 0 force: 0.718507
+trying to move to: (10,71)
+passable
+moves are currently:
+(5,4)=>(5,3)
+(10,70)=>(10,71)
+TIME TAKEN: 3.13711ms
+TURN 160
+at: (5,3)
+index: 0 force: 0.895808
+trying to move to: (5,2)
+passable
+at: (10,71)
+index: 0 force: 0.752754
+trying to move to: (10,72)
+passable
+moves are currently:
+(5,3)=>(5,2)
+(10,71)=>(10,72)
+TIME TAKEN: 2.53987ms
+TURN 161
+at: (5,2)
+index: 0 force: 0.878506
+trying to move to: (5,1)
+passable
+at: (10,72)
+index: 0 force: 0.776291
+trying to move to: (10,73)
+passable
+moves are currently:
+(5,2)=>(5,1)
+(10,72)=>(10,73)
+TIME TAKEN: 3.23296ms
+TURN 162
+at: (5,1)
+index: 0 force: 0.867621
+trying to move to: (5,0)
+passable
+at: (10,73)
+index: 0 force: 0.793221
+trying to move to: (10,74)
+passable
+moves are currently:
+(5,1)=>(5,0)
+(10,73)=>(10,74)
+TIME TAKEN: 2.55013ms
+TURN 163
+at: (5,0)
+index: 0 force: 0.857522
+trying to move to: (6,0)
+passable
+at: (10,74)
+index: 0 force: 0.809856
+trying to move to: (10,75)
+passable
+moves are currently:
+(5,0)=>(6,0)
+(10,74)=>(10,75)
+TIME TAKEN: 2.54989ms
+TURN 164
+at: (6,0)
+index: 0 force: 0.830301
+trying to move to: (7,0)
+passable
+at: (10,75)
+index: 0 force: 0.819445
+trying to move to: (10,76)
+passable
+moves are currently:
+(6,0)=>(7,0)
+(10,75)=>(10,76)
+TIME TAKEN: 3.22008ms
+TURN 165
+at: (7,0)
+index: 0 force: 0.798291
+trying to move to: (7,89)
+passable
+at: (10,76)
+index: 0 force: 0.821531
+trying to move to: (10,77)
+passable
+moves are currently:
+(7,0)=>(7,89)
+(10,76)=>(10,77)
+TIME TAKEN: 3.23892ms
+TURN 166
+at: (7,89)
+index: 0 force: 0.767014
+trying to move to: (7,88)
+passable
+at: (10,77)
+index: 0 force: 0.809825
+trying to move to: (10,78)
+passable
+moves are currently:
+(7,89)=>(7,88)
+(10,77)=>(10,78)
+TIME TAKEN: 2.61617ms
+TURN 167
+at: (7,88)
+index: 0 force: 0.743359
+trying to move to: (7,87)
+passable
+at: (10,78)
+index: 0 force: 0.791424
+trying to move to: (10,79)
+passable
+moves are currently:
+(7,88)=>(7,87)
+(10,78)=>(10,79)
+TIME TAKEN: 2.68316ms
+TURN 168
+at: (7,87)
+index: 0 force: 0.721928
+trying to move to: (8,87)
+passable
+at: (10,79)
+index: 0 force: 0.781042
+trying to move to: (10,80)
+passable
+moves are currently:
+(7,87)=>(8,87)
+(10,79)=>(10,80)
+TIME TAKEN: 3.15213ms
+TURN 169
+at: (8,87)
+index: 0 force: 0.726887
+trying to move to: (8,86)
+passable
+at: (10,80)
+index: 0 force: 0.774011
+trying to move to: (10,81)
+passable
+moves are currently:
+(8,87)=>(8,86)
+(10,80)=>(10,81)
+TIME TAKEN: 2.44784ms
+TURN 170
+at: (8,86)
+index: 0 force: 0.715582
+trying to move to: (8,85)
+passable
+at: (10,81)
+index: 0 force: 0.758207
+trying to move to: (10,82)
+passable
+moves are currently:
+(8,86)=>(8,85)
+(10,81)=>(10,82)
+TIME TAKEN: 2.41613ms
+TURN 171
+at: (8,85)
+index: 0 force: 0.693846
+trying to move to: (8,84)
+passable
+at: (10,82)
+index: 0 force: 0.719325
+trying to move to: (11,82)
+passable
+moves are currently:
+(8,85)=>(8,84)
+(10,82)=>(11,82)
+TIME TAKEN: 2.39897ms
+TURN 172
+at: (8,84)
+index: 0 force: 0.665559
+trying to move to: (7,84)
+passable
+at: (11,82)
+index: 0 force: 0.675216
+trying to move to: (12,82)
+passable
+moves are currently:
+(8,84)=>(7,84)
+(11,82)=>(12,82)
+TIME TAKEN: 2.41804ms
+TURN 173
+at: (7,84)
+index: 0 force: 0.663003
+trying to move to: (6,84)
+passable
+at: (12,82)
+index: 0 force: 0.669069
+trying to move to: (13,82)
+passable
+moves are currently:
+(7,84)=>(6,84)
+(12,82)=>(13,82)
+TIME TAKEN: 2.43402ms
+TURN 174
+at: (6,84)
+index: 0 force: 0.689046
+trying to move to: (5,84)
+passable
+at: (13,82)
+index: 0 force: 0.700282
+trying to move to: (14,82)
+passable
+moves are currently:
+(6,84)=>(5,84)
+(13,82)=>(14,82)
+TIME TAKEN: 2.46096ms
+TURN 175
+at: (5,84)
+index: 0 force: 0.724056
+trying to move to: (4,84)
+passable
+at: (14,82)
+index: 0 force: 0.73747
+trying to move to: (15,82)
+passable
+moves are currently:
+(5,84)=>(4,84)
+(14,82)=>(15,82)
+TIME TAKEN: 2.48885ms
+TURN 176
+at: (4,84)
+index: 0 force: 0.757495
+trying to move to: (3,84)
+passable
+at: (9,65)
+index: 0 force: 0.904395
+trying to move to: (10,65)
+passable
+at: (15,82)
+index: 0 force: 0.76774
+trying to move to: (16,82)
+passable
+moves are currently:
+(4,84)=>(3,84)
+(9,65)=>(10,65)
+(15,82)=>(16,82)
+TIME TAKEN: 2.85196ms
+TURN 177
+at: (3,84)
+index: 0 force: 0.797519
+trying to move to: (2,84)
+passable
+at: (10,65)
+index: 0 force: 0.876954
+trying to move to: (10,64)
+passable
+at: (16,82)
+index: 0 force: 0.790368
+trying to move to: (17,82)
+passable
+moves are currently:
+(3,84)=>(2,84)
+(10,65)=>(10,64)
+(16,82)=>(17,82)
+TIME TAKEN: 2.87604ms
+TURN 178
+at: (2,84)
+index: 0 force: 0.830795
+trying to move to: (1,84)
+passable
+at: (10,64)
+index: 0 force: 0.839794
+trying to move to: (11,64)
+passable
+at: (17,82)
+index: 0 force: 0.809262
+trying to move to: (18,82)
+passable
+moves are currently:
+(2,84)=>(1,84)
+(10,64)=>(11,64)
+(17,82)=>(18,82)
+TIME TAKEN: 2.86508ms
+TURN 179
+at: (1,84)
+index: 0 force: 0.843854
+trying to move to: (0,84)
+passable
+at: (11,64)
+index: 0 force: 0.757374
+trying to move to: (10,64)
+passable
+at: (18,82)
+index: 0 force: 0.832615
+trying to move to: (19,82)
+passable
+moves are currently:
+(1,84)=>(0,84)
+(11,64)=>(10,64)
+(18,82)=>(19,82)
+TIME TAKEN: 3.56483ms
+TURN 180
+at: (0,84)
+index: 0 force: 0.846504
+trying to move to: (59,84)
+passable
+at: (9,65)
+index: 0 force: 0.690684
+trying to move to: (10,65)
+passable
+at: (10,64)
+index: 0 force: 0.695953
+trying to move to: (11,64)
+passable
+at: (19,82)
+index: 0 force: 0.847743
+trying to move to: (20,82)
+passable
+moves are currently:
+(0,84)=>(59,84)
+(9,65)=>(10,65)
+(10,64)=>(11,64)
+(19,82)=>(20,82)
+TIME TAKEN: 3.29399ms
+TURN 181
+at: (9,65)
+index: 0 force: 0.676958
+trying to move to: (9,66)
+passable
+at: (10,65)
+index: 0 force: 0.677521
+trying to move to: (10,66)
+passable
+at: (11,64)
+index: 0 force: 0.676827
+trying to move to: (11,65)
+passable
+at: (20,82)
+index: 0 force: 0.847989
+trying to move to: (21,82)
+passable
+at: (59,84)
+index: 0 force: 0.850433
+trying to move to: (58,84)
+passable
+moves are currently:
+(9,65)=>(9,66)
+(10,65)=>(10,66)
+(11,64)=>(11,65)
+(20,82)=>(21,82)
+(59,84)=>(58,84)
+TIME TAKEN: 3.18122ms
+TURN 182
+at: (9,66)
+index: 0 force: 0.700321
+trying to move to: (9,67)
+passable
+at: (10,66)
+index: 0 force: 0.699194
+trying to move to: (10,67)
+passable
+at: (11,65)
+index: 0 force: 0.691347
+trying to move to: (11,66)
+passable
+at: (21,82)
+index: 0 force: 0.854102
+trying to move to: (22,82)
+passable
+at: (58,84)
+index: 0 force: 0.859396
+trying to move to: (57,84)
+passable
+moves are currently:
+(9,66)=>(9,67)
+(10,66)=>(10,67)
+(11,65)=>(11,66)
+(21,82)=>(22,82)
+(58,84)=>(57,84)
+TIME TAKEN: 3.15905ms
+TURN 183
+at: (9,67)
+index: 0 force: 0.72595
+trying to move to: (9,68)
+passable
+at: (10,67)
+index: 0 force: 0.726272
+trying to move to: (10,68)
+passable
+at: (11,66)
+index: 0 force: 0.714753
+trying to move to: (11,67)
+passable
+at: (22,82)
+index: 0 force: 0.867248
+trying to move to: (23,82)
+passable
+at: (57,84)
+index: 0 force: 0.860979
+trying to move to: (56,84)
+passable
+moves are currently:
+(9,67)=>(9,68)
+(10,67)=>(10,68)
+(11,66)=>(11,67)
+(22,82)=>(23,82)
+(57,84)=>(56,84)
+TIME TAKEN: 3.13306ms
+TURN 184
+at: (9,68)
+index: 0 force: 0.749162
+trying to move to: (9,69)
+passable
+at: (10,68)
+index: 0 force: 0.750095
+trying to move to: (10,69)
+passable
+at: (11,67)
+index: 0 force: 0.736161
+trying to move to: (11,68)
+passable
+at: (23,82)
+index: 0 force: 0.872419
+trying to move to: (24,82)
+passable
+at: (56,84)
+index: 0 force: 0.860158
+trying to move to: (55,84)
+passable
+moves are currently:
+(9,68)=>(9,69)
+(10,68)=>(10,69)
+(11,67)=>(11,68)
+(23,82)=>(24,82)
+(56,84)=>(55,84)
+TIME TAKEN: 3.14784ms
+TURN 185
+at: (9,69)
+index: 0 force: 0.769981
+trying to move to: (9,70)
+passable
+at: (10,69)
+index: 0 force: 0.768642
+trying to move to: (10,70)
+passable
+at: (11,68)
+index: 0 force: 0.756443
+trying to move to: (11,69)
+passable
+at: (24,82)
+index: 0 force: 0.87574
+trying to move to: (25,82)
+passable
+at: (55,84)
+index: 0 force: 0.862669
+trying to move to: (54,84)
+passable
+moves are currently:
+(9,69)=>(9,70)
+(10,69)=>(10,70)
+(11,68)=>(11,69)
+(24,82)=>(25,82)
+(55,84)=>(54,84)
+TIME TAKEN: 3.14498ms
+TURN 186
+at: (9,70)
+index: 0 force: 0.782641
+trying to move to: (9,71)
+passable
+at: (10,70)
+index: 0 force: 0.779645
+trying to move to: (10,71)
+passable
+at: (11,69)
+index: 0 force: 0.769938
+trying to move to: (11,70)
+passable
+at: (25,82)
+index: 0 force: 0.877783
+trying to move to: (26,82)
+passable
+at: (54,84)
+index: 0 force: 0.870586
+trying to move to: (53,84)
+passable
+moves are currently:
+(9,70)=>(9,71)
+(10,70)=>(10,71)
+(11,69)=>(11,70)
+(25,82)=>(26,82)
+(54,84)=>(53,84)
+TIME TAKEN: 3.13282ms
+TURN 187
+at: (9,71)
+index: 0 force: 0.77944
+trying to move to: (9,72)
+passable
+at: (10,71)
+index: 0 force: 0.780107
+trying to move to: (10,72)
+passable
+at: (11,70)
+index: 0 force: 0.775216
+trying to move to: (11,71)
+passable
+at: (26,82)
+index: 0 force: 0.878257
+trying to move to: (27,82)
+passable
+at: (53,84)
+index: 0 force: 0.87479
+trying to move to: (52,84)
+passable
+moves are currently:
+(9,71)=>(9,72)
+(10,71)=>(10,72)
+(11,70)=>(11,71)
+(26,82)=>(27,82)
+(53,84)=>(52,84)
+TIME TAKEN: 3.78489ms
+TURN 188
+at: (9,72)
+index: 0 force: 0.769208
+trying to move to: (10,72)
+passable
+at: (10,72)
+index: 0 force: 0.772316
+trying to move to: (10,73)
+passable
+at: (11,71)
+index: 0 force: 0.770644
+trying to move to: (11,72)
+passable
+at: (27,82)
+index: 0 force: 0.877536
+trying to move to: (28,82)
+passable
+at: (52,84)
+index: 0 force: 0.872288
+trying to move to: (51,84)
+passable
+moves are currently:
+(9,72)=>(10,72)
+(10,72)=>(10,73)
+(11,71)=>(11,72)
+(27,82)=>(28,82)
+(52,84)=>(51,84)
+TIME TAKEN: 3.35217ms
+TURN 189
+at: (10,72)
+index: 0 force: 0.758507
+trying to move to: (11,72)
+passable
+at: (10,73)
+index: 0 force: 0.763461
+trying to move to: (10,74)
+passable
+at: (11,72)
+index: 0 force: 0.761395
+trying to move to: (11,73)
+passable
+at: (28,82)
+index: 0 force: 0.883184
+trying to move to: (29,82)
+passable
+at: (51,84)
+index: 0 force: 0.865558
+trying to move to: (50,84)
+passable
+moves are currently:
+(10,72)=>(11,72)
+(10,73)=>(10,74)
+(11,72)=>(11,73)
+(28,82)=>(29,82)
+(51,84)=>(50,84)
+TIME TAKEN: 3.17597ms
+TURN 190
+at: (9,65)
+index: 0 force: 0.757955
+trying to move to: (10,65)
+passable
+at: (10,74)
+index: 0 force: 0.755257
+trying to move to: (10,75)
+passable
+at: (11,72)
+index: 0 force: 0.745237
+trying to move to: (11,73)
+passable
+at: (11,73)
+index: 0 force: 0.750943
+trying to move to: (11,74)
+passable
+at: (29,82)
+index: 0 force: 0.888964
+trying to move to: (30,82)
+passable
+at: (50,84)
+index: 0 force: 0.858869
+trying to move to: (49,84)
+passable
+moves are currently:
+(9,65)=>(10,65)
+(10,74)=>(10,75)
+(11,72)=>(11,73)
+(11,73)=>(11,74)
+(29,82)=>(30,82)
+(50,84)=>(49,84)
+TIME TAKEN: 4.40097ms
+TURN 191
+at: (10,65)
+index: 0 force: 0.75489
+trying to move to: (10,64)
+passable
+at: (10,75)
+index: 0 force: 0.759932
+trying to move to: (10,76)
+passable
+at: (11,73)
+index: 0 force: 0.739967
+trying to move to: (11,74)
+passable
+at: (11,74)
+index: 0 force: 0.751639
+trying to move to: (11,75)
+passable
+at: (30,82)
+index: 0 force: 0.882386
+trying to move to: (31,82)
+passable
+at: (49,84)
+index: 0 force: 0.854344
+trying to move to: (48,84)
+passable
+moves are currently:
+(10,65)=>(10,64)
+(10,75)=>(10,76)
+(11,73)=>(11,74)
+(11,74)=>(11,75)
+(30,82)=>(31,82)
+(49,84)=>(48,84)
+TIME TAKEN: 4.05002ms
+TURN 192
+at: (10,64)
+index: 0 force: 0.748937
+trying to move to: (11,64)
+passable
+at: (10,76)
+index: 0 force: 0.772559
+trying to move to: (10,77)
+passable
+at: (11,74)
+index: 0 force: 0.747728
+trying to move to: (11,75)
+passable
+at: (11,75)
+index: 0 force: 0.760774
+trying to move to: (11,76)
+passable
+at: (31,82)
+index: 0 force: 0.879461
+trying to move to: (32,82)
+passable
+at: (48,84)
+index: 0 force: 0.85386
+trying to move to: (47,84)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,76)=>(10,77)
+(11,74)=>(11,75)
+(11,75)=>(11,76)
+(31,82)=>(32,82)
+(48,84)=>(47,84)
+TIME TAKEN: 4.29392ms
+TURN 193
+at: (10,77)
+index: 0 force: 0.787319
+trying to move to: (10,78)
+passable
+at: (11,64)
+index: 0 force: 0.740857
+trying to move to: (10,64)
+passable
+at: (11,75)
+index: 0 force: 0.757783
+trying to move to: (11,76)
+passable
+at: (11,76)
+index: 0 force: 0.772967
+trying to move to: (11,77)
+passable
+at: (32,82)
+index: 0 force: 0.876858
+trying to move to: (33,82)
+passable
+at: (47,84)
+index: 0 force: 0.85202
+trying to move to: (46,84)
+passable
+moves are currently:
+(10,77)=>(10,78)
+(11,64)=>(10,64)
+(11,75)=>(11,76)
+(11,76)=>(11,77)
+(32,82)=>(33,82)
+(47,84)=>(46,84)
+TIME TAKEN: 3.5491ms
+TURN 194
+at: (10,64)
+index: 0 force: 0.730193
+trying to move to: (11,64)
+passable
+at: (10,78)
+index: 0 force: 0.800758
+trying to move to: (10,79)
+passable
+at: (11,76)
+index: 0 force: 0.767661
+trying to move to: (11,77)
+passable
+at: (11,77)
+index: 0 force: 0.783803
+trying to move to: (11,78)
+passable
+at: (33,82)
+index: 0 force: 0.874313
+trying to move to: (34,82)
+passable
+at: (46,84)
+index: 0 force: 0.84598
+trying to move to: (45,84)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,78)=>(10,79)
+(11,76)=>(11,77)
+(11,77)=>(11,78)
+(33,82)=>(34,82)
+(46,84)=>(45,84)
+TIME TAKEN: 3.37505ms
+TURN 195
+at: (10,79)
+index: 0 force: 0.818195
+trying to move to: (10,80)
+passable
+at: (11,64)
+index: 0 force: 0.717798
+trying to move to: (10,64)
+passable
+at: (11,77)
+index: 0 force: 0.777127
+trying to move to: (11,78)
+passable
+at: (11,78)
+index: 0 force: 0.795048
+trying to move to: (11,79)
+passable
+at: (34,82)
+index: 0 force: 0.865378
+trying to move to: (35,82)
+passable
+at: (45,84)
+index: 0 force: 0.834465
+trying to move to: (44,84)
+passable
+moves are currently:
+(10,79)=>(10,80)
+(11,64)=>(10,64)
+(11,77)=>(11,78)
+(11,78)=>(11,79)
+(34,82)=>(35,82)
+(45,84)=>(44,84)
+TIME TAKEN: 3.89504ms
+TURN 196
+at: (10,64)
+index: 0 force: 0.704136
+trying to move to: (11,64)
+passable
+at: (10,80)
+index: 0 force: 0.834673
+trying to move to: (10,81)
+passable
+at: (11,78)
+index: 0 force: 0.786946
+trying to move to: (11,79)
+passable
+at: (11,79)
+index: 0 force: 0.811197
+trying to move to: (11,80)
+passable
+at: (35,82)
+index: 0 force: 0.847405
+trying to move to: (36,82)
+passable
+at: (44,84)
+index: 0 force: 0.825793
+trying to move to: (43,84)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,80)=>(10,81)
+(11,78)=>(11,79)
+(11,79)=>(11,80)
+(35,82)=>(36,82)
+(44,84)=>(43,84)
+TIME TAKEN: 4.20117ms
+TURN 197
+at: (10,81)
+index: 0 force: 0.852661
+trying to move to: (10,82)
+passable
+at: (11,64)
+index: 0 force: 0.689861
+trying to move to: (10,64)
+passable
+at: (11,79)
+index: 0 force: 0.802817
+trying to move to: (11,80)
+passable
+at: (11,80)
+index: 0 force: 0.827259
+trying to move to: (11,81)
+passable
+at: (36,82)
+index: 0 force: 0.813258
+trying to move to: (37,82)
+passable
+at: (43,84)
+index: 0 force: 0.807041
+trying to move to: (42,84)
+passable
+moves are currently:
+(10,81)=>(10,82)
+(11,64)=>(10,64)
+(11,79)=>(11,80)
+(11,80)=>(11,81)
+(36,82)=>(37,82)
+(43,84)=>(42,84)
+TIME TAKEN: 4.22788ms
+TURN 198
+at: (10,64)
+index: 0 force: 0.672631
+trying to move to: (11,64)
+passable
+at: (10,82)
+index: 0 force: 0.859977
+trying to move to: (10,83)
+passable
+at: (11,80)
+index: 0 force: 0.813297
+trying to move to: (11,81)
+passable
+at: (11,81)
+index: 0 force: 0.840249
+trying to move to: (11,82)
+passable
+at: (37,82)
+index: 0 force: 0.764637
+trying to move to: (38,82)
+passable
+at: (42,84)
+index: 0 force: 0.764157
+trying to move to: (41,84)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,82)=>(10,83)
+(11,80)=>(11,81)
+(11,81)=>(11,82)
+(37,82)=>(38,82)
+(42,84)=>(41,84)
+TIME TAKEN: 3.31092ms
+TURN 199
+at: (9,65)
+index: 0 force: 0.64785
+trying to move to: (10,65)
+passable
+at: (10,83)
+index: 0 force: 0.861755
+trying to move to: (10,84)
+passable
+at: (11,64)
+index: 0 force: 0.651066
+trying to move to: (10,64)
+passable
+at: (11,81)
+index: 0 force: 0.821324
+trying to move to: (11,82)
+passable
+at: (11,82)
+index: 0 force: 0.843163
+trying to move to: (11,83)
+passable
+at: (38,82)
+index: 0 force: 0.693425
+trying to move to: (39,82)
+passable
+at: (41,84)
+index: 0 force: 0.698663
+trying to move to: (40,84)
+passable
+moves are currently:
+(9,65)=>(10,65)
+(10,83)=>(10,84)
+(11,64)=>(10,64)
+(11,81)=>(11,82)
+(11,82)=>(11,83)
+(38,82)=>(39,82)
+(41,84)=>(40,84)
+TIME TAKEN: 4.26579ms
+TURN 200
+at: (10,64)
+index: 0 force: 0.631526
+trying to move to: (11,64)
+passable
+at: (10,65)
+index: 0 force: 0.631083
+trying to move to: (10,64)
+passable
+at: (10,84)
+index: 0 force: 0.862622
+trying to move to: (10,85)
+passable
+at: (11,82)
+index: 0 force: 0.820985
+trying to move to: (11,83)
+passable
+at: (11,83)
+index: 0 force: 0.842354
+trying to move to: (11,84)
+passable
+at: (39,82)
+index: 0 force: 0.604409
+trying to move to: (39,83)
+passable
+at: (40,84)
+index: 0 force: 0.611499
+trying to move to: (40,85)
+passable
+moves are currently:
+(10,64)=>(11,64)
+(10,65)=>(10,64)
+(10,84)=>(10,85)
+(11,82)=>(11,83)
+(11,83)=>(11,84)
+(39,82)=>(39,83)
+(40,84)=>(40,85)
+TIME TAKEN: 4.42791ms

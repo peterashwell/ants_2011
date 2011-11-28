@@ -1,4 +1,5 @@
 #include <vector>
+#include <algorithm>
 
 #include "State.h"
 #include "Location.h"
@@ -8,13 +9,14 @@
 
 using namespace std;
 
+
+
 void AntManager::newTurn(State& s) {
 	ant_forces.clear(); // TODO can this be done more efficiently
-	float default_forces[4] = {0.0, 0.0, 0.0, 0.0};
 	for (int antnum = 0; antnum < s.myAnts.size(); antnum++) {
-		vector<float> new_vec; 
+		vector<pair<int, float> > new_vec; 
 		for (int d = 0; d < TDIRECTIONS; d++) {
-			new_vec.push_back(0); // just cause it's easy fuck off
+			new_vec.push_back(pair<int, float>(d, 0.0)); // just cause it's easy fuck off
 		}
 		ant_forces.push_back(new_vec);
 	}
@@ -28,7 +30,7 @@ void AntManager::apply_field(State& s, float** df) {
 		// For each direction around the ant add the forces
 		for (int d = 0; d < TDIRECTIONS; d++) {  
 			Location dest = s.getLocation(ant_loc, d);
-			ant_forces.at(antnum)[d] += df[dest.row][dest.col];
+			ant_forces.at(antnum)[d].second += df[dest.row][dest.col];
 		}
 	}
 }
@@ -43,20 +45,22 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 	//debug << "stuff" << endl;
 	for (int antnum = 0; antnum < ant_forces.size(); antnum++) {
 		Location ant_loc = s.myAnts.at(antnum); // parallel arrays
-		int best_dir = 0;
-		float best_force = ant_forces.at(antnum)[0];
-		for (int d = 1; d < TDIRECTIONS; d++) {
-			// TODO is a threshold needed here
-			if (ant_forces.at(antnum)[d] > best_force) {
-				best_force = ant_forces.at(antnum)[d];
-				best_dir = d;
+		cerr << "at: " << tostring(ant_loc) << endl;
+		sort(ant_forces[antnum].begin(), ant_forces[antnum].end(), compareAF());
+		// Try to moves from best to worst
+		for (int index = 0; index < TDIRECTIONS; ++index) {
+			cerr << "index: " << index << " " << "force: " << ant_forces[antnum][index].second << endl;
+			int best_direction = ant_forces[antnum][index].first; // direction of greatest force
+			Location dest = s.getLocation(s.myAnts.at(antnum), best_direction);	
+			cerr << "trying to move to: " << tostring(dest) << endl;
+			if (ld.passable(dest, s)) { // See LocalData.h
+				cerr << "passable" << endl;
+				s.makeMove(ant_loc, best_direction);
+				ld.moves.push_back(pair<Location, Location>(ant_loc, dest));
+				break; // no more moves for this guy
 			}
 		}
-		cerr << ld.dumpMoves();
 		// TODO this needs to be rewritten to recursively call resolve for ants blocking the way
-		if (ld.passable(ant_loc, s)) { // See LocalData.h
-			s.makeMove(ant_loc, best_dir);
-			ld.moves.push_back(pair<Location, Location>(ant_loc, s.getLocation(ant_loc, best_dir)));
-		}
 	}
+	cerr << ld.dumpMoves();
 }

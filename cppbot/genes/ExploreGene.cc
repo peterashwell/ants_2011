@@ -34,21 +34,22 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			for(int direction = 0; direction < TDIRECTIONS; ++direction)
 			{
 				Location adj = state.getLocation(cell_loc, direction);
+				//cerr << adj << " is adjacent to " << cell_loc << endl;
 				int adj_row = adj.row;
 				int adj_col = adj.col;
 
 				if(!state.grid[adj_row][adj_col].isWater) // If is passable
 				{
 					// TODO check collab diff equation to see if this makes sense
-					adj_sum += disp_field_prev[adj_row][adj_col] - center_energy;
+					adj_sum += disp_field_prev[adj_row][adj_col];
 					++adj_count;
 				}
 			}
 			float adj_energy = 0.0f;
 
-			if(adj_count > 0)
+			if(adj_count > 0) {
 				adj_energy = adj_sum / adj_count;
-
+			}
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
