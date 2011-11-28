@@ -16,10 +16,10 @@ class LocalData {
 	private:
 		int num_rows;
 		int num_cols;
-		float** last_seen;
 	public:
 		~LocalData();
 		std::vector<std::pair<Location, Location> > moves;
+		float** last_seen;
 		bool passable(Location& loc, State& s); // Tests is a square is okay to move to
 		int turnsSinceSeen(State& s, int row, int col);
 		void setup(State& s); // Set up the LocalData for the remainder of the game

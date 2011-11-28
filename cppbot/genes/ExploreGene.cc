@@ -8,6 +8,22 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 	// Swap the buffer 
 	swap_disp_buffer();
 
+	cerr << "NIGGER" << endl;
+	for (int r = 0; r < rows; r++) {
+		for (int c = 0; c < cols; c++) {
+			cerr << local_data.last_seen[r][c] << ",";
+		}
+		cerr << endl;
+	}
+	cerr << "BALLPARK" << endl;
+	for (int r = 0; r < rows; r++) {
+		for (int c = 0; c < cols; c++) {
+			cerr << local_data.turnsSinceSeen(state, r, c) << ",";
+		}
+		cerr << endl;
+	}
+	
+
 	for(int i = 0; i < rows; ++i)
 	{
 		for(int j = 0; j < cols; ++j)
@@ -17,11 +33,12 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			// Compute the energy for the center square
 			// Square is more attractive the longer it hasn't been seen
 			int last_seen = local_data.turnsSinceSeen(state, i, j);
+		
 			float center_energy = 0.0f;
 
 			if(last_seen != 0)
 			{
-				center_energy = pow(unex_attract * (1.0f - 1.0f / (float)last_seen), unex_decay);
+				center_energy = /*pow(*/unex_attract * (1.0f - 1.0f / (float)last_seen);//, unex_decay);
 				center_energy = min(1.0f, center_energy);
 				disp_field_curr[i][j] = center_energy;
 				continue;
@@ -38,7 +55,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 				int adj_row = adj.row;
 				int adj_col = adj.col;
 
-				if(!state.grid[adj_row][adj_col].isWater) // If is passable
+				if((!state.grid[adj_row][adj_col].isWater) && state.grid[adj_row][adj) // If is passable
 				{
 					// TODO check collab diff equation to see if this makes sense
 					adj_sum += disp_field_prev[adj_row][adj_col];

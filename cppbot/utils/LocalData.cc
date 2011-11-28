@@ -3,8 +3,11 @@
 #include "Location.h"
 #include "utils.h"
 
+#include <iostream>
 #include <sstream>
 #include <string>
+
+using namespace std;
 
 void LocalData::setup(State& s) {
 	num_rows = s.rows;
@@ -34,6 +37,8 @@ void LocalData::updateVisibleData(State& s) {
 	for (int r = 0; r < num_rows; r++) {
 		for (int c = 0; c < num_cols; c++) {
 			if (s.grid[r][c].isVisible) {
+				cerr << "bitch faggot " << endl;
+				cerr << "with value: " << s.turn << endl;;
 				last_seen[r][c] = s.turn; // set to last seen on current turn
 			}
 		}
@@ -65,7 +70,7 @@ bool LocalData::passable(Location& loc, State& s) {
 		}
 		// Check if we cleared the cell by moving our ants during the turn
 		bool have_moved = true;
-		std::vector<std::pair<Location, Location> >::iterator move;
+		vector<pair<Location, Location> >::iterator move;
 		for (move = moves.begin(); move != moves.end(); move++) {
 			// The cell has been cleared (but possibly reoccupied)
 			if (loc == (move->first)) {
@@ -85,15 +90,15 @@ bool LocalData::passable(Location& loc, State& s) {
 	return true;
 }
 
-std::string LocalData::dumpMoves() {
-	std::stringstream out;
+string LocalData::dumpMoves() {
+	stringstream out;
 	if (moves.size() == 0) {
 		return "";
 	}
-	out << "moves are currently:" << std::endl;
+	out << "moves are currently:" << endl;
 	for (int m = 0; m < moves.size(); m++) {
 		out << "(" << moves.at(m).first.row << "," << moves.at(m).first.col << ")" << "=>";
-		out << "(" << moves.at(m).second.row << "," << moves.at(m).second.col << ")" << std::endl;
+		out << "(" << moves.at(m).second.row << "," << moves.at(m).second.col << ")" << endl;
 	}
 	return out.str();
 }
