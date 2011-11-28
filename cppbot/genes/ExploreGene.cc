@@ -11,7 +11,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 	cerr << "NIGGER" << endl;
 	for (int r = 0; r < rows; r++) {
 		for (int c = 0; c < cols; c++) {
-			cerr << local_data.last_seen[r][c] << ",";
+			cerr << local_data.turns_since_seen[r][c] << ",";
 		}
 		cerr << endl;
 	}
@@ -22,15 +22,8 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 		}
 		cerr << endl;
 	}
-*/
-	cerr << "BANDIT" << endl;
-	for (int r = 0; r < rows; r++) {
-		for (int c = 0; c < cols; c++) {
-			cerr /*<< "(" << r << "," << c << ")"*/ << state.grid[r][c].isVisible << ",";
-		}
-		cerr << endl;
-	}
 
+*/
 
 	for(int i = 0; i < rows; ++i)
 	{
@@ -40,13 +33,13 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			Location cell_loc(i, j);
 			// Compute the energy for the center square
 			// Square is more attractive the longer it hasn't been seen
-			int last_seen = local_data.turnsSinceSeen(state, i, j);
+			int turns_since_seen = local_data.turnsSinceSeen(state, i, j);
 		
 			float center_energy = 0.0f;
 
-			if(last_seen != 0)
+			if(turns_since_seen != 0) // check to see if it is a source of energy
 			{
-				center_energy = /*pow(*/unex_attract * (1.0f - 1.0f / (float)last_seen);//, unex_decay);
+				center_energy = /*pow(*/unex_attract * (1.0f - 1.0f / (float)turns_since_seen);//, unex_decay);
 				center_energy = min(1.0f, center_energy);
 				disp_field_curr[i][j] = center_energy;
 				continue;

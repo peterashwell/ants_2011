@@ -12,7 +12,7 @@ using namespace std;
 class ExploreGene : public Gene
 {
 public:
-	ExploreGene(int rows, int cols, float unex_attract = 1.0f, float unex_decay = 1.0f, float disp_coeff = 1.0f) : Gene("ExploreGene", rows, cols)
+	ExploreGene(int rows, int cols, float unex_attract = 1.0f, float unex_decay = 1.0f, float disp_coeff = 0.4f) : Gene("ExploreGene", rows, cols)
 	{
 		this->unex_attract = unex_attract;
 		this->unex_decay = unex_decay;

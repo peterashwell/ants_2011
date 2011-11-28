@@ -45,16 +45,16 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 	//debug << "stuff" << endl;
 	for (int antnum = 0; antnum < ant_forces.size(); antnum++) {
 		Location ant_loc = s.myAnts.at(antnum); // parallel arrays
-		cerr << "at: " << tostring(ant_loc) << endl;
+		//cerr << "at: " << tostring(ant_loc) << endl;
 		sort(ant_forces[antnum].begin(), ant_forces[antnum].end(), compareAF());
 		// Try to moves from best to worst
 		for (int index = 0; index < TDIRECTIONS; ++index) {
-			cerr << "index: " << index << " " << "force: " << ant_forces[antnum][index].second << endl;
+			//cerr << "index: " << index << " " << "force: " << ant_forces[antnum][index].second << endl;
 			int best_direction = ant_forces[antnum][index].first; // direction of greatest force
 			Location dest = s.getLocation(s.myAnts.at(antnum), best_direction);	
-			cerr << "trying to move to: " << tostring(dest) << endl;
+			//cerr << "trying to move to: " << tostring(dest) << endl;
 			if (ld.passable(dest, s)) { // See LocalData.h
-				cerr << "passable" << endl;
+				//cerr << "passable" << endl;
 				s.makeMove(ant_loc, best_direction);
 				ld.moves.push_back(pair<Location, Location>(ant_loc, dest));
 				break; // no more moves for this guy
@@ -62,5 +62,5 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 		}
 		// TODO this needs to be rewritten to recursively call resolve for ants blocking the way
 	}
-	cerr << ld.dumpMoves();
+	//cerr << ld.dumpMoves();
 }
