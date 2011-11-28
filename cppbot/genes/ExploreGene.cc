@@ -55,7 +55,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 				int adj_row = adj.row;
 				int adj_col = adj.col;
 
-				if((!state.grid[adj_row][adj_col].isWater) && state.grid[adj_row][adj) // If is passable
+				if((!state.grid[adj_row][adj_col].isWater)) // If is passable
 				{
 					// TODO check collab diff equation to see if this makes sense
 					adj_sum += disp_field_prev[adj_row][adj_col];
@@ -70,7 +70,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	//dump_current_df(state.turn); 
+	dump_current_df(state.turn); 
 }
 
 void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {

@@ -37,7 +37,7 @@ class Visualize:
     self.iterations = 1 # If it's -1, there were no iterations in the folder
     while True:
       try:
-        f = open("{0}/cppbot/Debug/dflogs/{1}_{2}.df".format(os.getcwd(), self.genes[0], self.iterations))
+        f = open("{0}/cppbot/dflogs/{1}_{2}.df".format(os.getcwd(), self.genes[0], self.iterations))
         f.close()
         self.iterations += 1
       except IOError as e:
@@ -55,7 +55,7 @@ class Visualize:
       self.dispersion_maxs[gene] = [[] for iter in xrange(self.iterations)]
       self.dispersion_mins[gene] = [[] for iter in xrange(self.iterations)]
       for iteration in xrange(0, self.iterations - 1):
-        f = open("{0}/cppbot/Debug/dflogs/{1}_{2}.df".format(os.getcwd(), gene, iteration + 1))
+        f = open("{0}/cppbot/dflogs/{1}_{2}.df".format(os.getcwd(), gene, iteration + 1))
         lines = f.readlines()
         
         # Store Map Size information
