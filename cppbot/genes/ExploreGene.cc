@@ -7,7 +7,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 {
 	// Swap the buffer 
 	swap_disp_buffer();
-
+/*
 	cerr << "NIGGER" << endl;
 	for (int r = 0; r < rows; r++) {
 		for (int c = 0; c < cols; c++) {
@@ -22,13 +22,21 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 		}
 		cerr << endl;
 	}
-	
+
+	cerr << "BANDIT" << endl;
+	for (int r = 0; r < rows; r++) {
+		for (int c = 0; c < cols; c++) {
+			cerr << state.grid[r][c].isVisible << ",";
+		}
+		cerr << endl;
+	}
+*/
 
 	for(int i = 0; i < rows; ++i)
 	{
 		for(int j = 0; j < cols; ++j)
 		{
-			if (state.grid[i][j].isWater) {disp_field_curr[i][j] = -1; continue;} // do not consider
+		//	if (state.grid[i][j].isWater) {disp_field_curr[i][j] = -1; continue;} // do not consider
 			Location cell_loc(i, j);
 			// Compute the energy for the center square
 			// Square is more attractive the longer it hasn't been seen
@@ -70,7 +78,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	dump_current_df(state.turn); 
+	//dump_current_df(state.turn); 
 }
 
 void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {

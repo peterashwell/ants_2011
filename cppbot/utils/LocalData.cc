@@ -37,8 +37,6 @@ void LocalData::updateVisibleData(State& s) {
 	for (int r = 0; r < num_rows; r++) {
 		for (int c = 0; c < num_cols; c++) {
 			if (s.grid[r][c].isVisible) {
-				cerr << "bitch faggot " << endl;
-				cerr << "with value: " << s.turn << endl;;
 				last_seen[r][c] = s.turn; // set to last seen on current turn
 			}
 		}
@@ -69,14 +67,17 @@ bool LocalData::passable(Location& loc, State& s) {
 			return false; // Enemy ant, can't occupy
 		}
 		// Check if we cleared the cell by moving our ants during the turn
-		bool have_moved = true;
+		bool have_moved = false;
 		vector<pair<Location, Location> >::iterator move;
+		cerr << "checking passable at : " << tostring(loc) << endl;
 		for (move = moves.begin(); move != moves.end(); move++) {
+			cerr << "checking: " << tostring(move->first) << " " << (loc == move->first) << endl;
 			// The cell has been cleared (but possibly reoccupied)
 			if (loc == (move->first)) {
 				have_moved = true;
 			}
 			// The cell has already been occupied by one of our ants
+			cerr << "checking: " << tostring(move->second) << " " << (loc == move->second) << endl;
 			if (loc == (move->second)) {
 				return false;
 			}
@@ -85,6 +86,7 @@ bool LocalData::passable(Location& loc, State& s) {
 		if (have_moved) {
 			return true;
 		}
+		return false; // Can't move there, we are occupying it!
 	}
 	// There are no impediments to moving to the cell
 	return true;

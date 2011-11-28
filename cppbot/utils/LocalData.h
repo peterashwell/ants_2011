@@ -27,7 +27,7 @@ class LocalData {
 		std::string dumpMoves();
 	private:
 		void updateVisibleData(State& s);	
-		static const int DEFAULT_TURNS_SINCE_VISIBLE = -100;
+		static const int DEFAULT_TURNS_SINCE_VISIBLE = -10;
 	// TODO food history
 };
 

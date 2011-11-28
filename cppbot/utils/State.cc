@@ -1,6 +1,4 @@
-#include <fstream>
 #include "State.h"
-#include "LocalData.h"
 
 using namespace std;
 
@@ -9,6 +7,11 @@ State::State()
 {
     gameover = 0;
     turn = 0;
+};
+
+//deconstructor
+State::~State()
+{
 };
 
 //sets the state up

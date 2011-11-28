@@ -1,9 +1,8 @@
-#ifndef STATE_H
-#define STATE_H
+#ifndef STATE_H_
+#define STATE_H_
 
 #include <iostream>
 #include <stdio.h>
-#include <fstream>
 #include <cstdlib>
 #include <cmath>
 #include <string>
@@ -11,6 +10,7 @@
 #include <queue>
 #include <stack>
 #include <stdint.h>
+
 #include "Timer.h"
 #include "Square.h"
 #include "Location.h"
@@ -48,6 +48,7 @@ struct State
         Functions
     */
     State();
+    ~State();
 
     void setup();
     void reset();
