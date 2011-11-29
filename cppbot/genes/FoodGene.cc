@@ -1,9 +1,10 @@
-#include "ExploreGene.h"
+#include "FoodGene.h"
 
+#include "../utils/LocalData.h"
 #include "../utils/State.h"
 #include "../utils/Location.h"
 
-void ExploreGene::disperse_once(State& state, LocalData& local_data)
+void FoodGene::disperse_once(State& state, LocalData& local_data)
 {
 	// Swap the buffer 
 	swap_disp_buffer();
@@ -17,15 +18,12 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
       }
 			Location cell_loc(i, j);
 			// Default center energy from previous iter
-      float center_energy = disp_field_prev[i][j];;
+      float center_energy = disp_field_prev[i][j];
 			
 			// Compute the energy for the center square
       // Square is more attractive the longer it hasn't been seen
-			int turns_since_seen = local_data.turnsSinceSeen(state, i, j);
-			if(turns_since_seen > unseen_limit) // check to see if it is a source of energy
-			{
-				center_energy = pow(unex_attract * (1.0f - 1.0f / (float)turns_since_seen), unex_decay);
-				center_energy = min(unex_attract, center_energy);
+			if (state.grid[i][j].isFood) {
+      	center_energy = food_attract;
 				disp_field_curr[i][j] = center_energy;
 				continue;
 			} 
@@ -59,7 +57,7 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 	//dump_current_df(state.turn); 
 }
 
-void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {
+void FoodGene::express(State& s, LocalData& ld, AntManager& am) {
 	for (int iter = 0; iter < DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}

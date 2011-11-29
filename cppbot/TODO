@@ -1,0 +1,11 @@
+- Clean up repository
+- Add additional functionality to visualizer
+- Fix ant collision detection to use an O(1) grid instead of O(a) lookup array
+- Add wall history to local game data
+- Add food gene
+- Add food history to local game data
+- Add collaborative dispersion to food gene
+Simultaneously
+	- Combat genes
+	- Genetic algorithm code
+	- Influence map + map recognition

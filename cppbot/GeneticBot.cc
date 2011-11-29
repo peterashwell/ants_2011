@@ -45,11 +45,13 @@ void GeneticBot::playGame()
 		//debug << "msg3" << endl;
 		// Use the AntManager to gather move data from genes, battles etc.
 		genome.express(state, local_data, antmgr);
+		cerr << "TIME AFTER EXPRESSING GENES: " << timer.getTime() << "ms" << endl;
 		//debug << "TIME (expressed genes): " << timer.getTime() << endl;
 		//debug << "msg4" << endl;
 		//handleBattles(state, antboss); // TODO 
 		antmgr.resolve_forces(state, local_data); // Issue orders for ants
-		local_data.dumpMoves();
+		cerr << "TIME AFTER RESOLVING FORCES: " << timer.getTime() << "ms" << endl;
+		//local_data.dumpMoves();
 		//debug << "TIME (resolved forces): " << timer.getTime() << endl;
 		//debug << "msg4" << endl;
 		endTurn();

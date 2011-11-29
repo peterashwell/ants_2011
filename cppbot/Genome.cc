@@ -1,6 +1,7 @@
 #include "Genome.h"
 #include "utils/State.h"
 #include "utils/AntManager.h"
+#include "genes/FoodGene.h"
 
 int Genome::size() {
 	return genes.size();
@@ -8,6 +9,7 @@ int Genome::size() {
 
 void Genome::setup(State& s) {
 	genes.push_back(new ExploreGene(s.rows, s.cols));
+  genes.push_back(new FoodGene(s.rows, s.cols));
 }
 
 Genome::~Genome() {

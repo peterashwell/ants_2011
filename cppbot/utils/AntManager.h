@@ -19,7 +19,6 @@ struct AntManager {
 	void apply_field(State& s, float** df); // accumulate forces from disp fields
 	void apply_single(std::pair<int, int> ant, int dir);
 	void resolve_forces(State &s, LocalData &ld); // resolve max forces to issue orders
-
 	struct compareAF {
 		bool operator() (const std::pair<int, float>& left,
 		  const std::pair<int, float>& right) {

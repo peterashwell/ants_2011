@@ -10,7 +10,7 @@
 
 
 struct Genome {
-	static const int NUM_GENES = 1;
+	static const int NUM_GENES = 2;
 
 	public:
 		void setup(State& s);

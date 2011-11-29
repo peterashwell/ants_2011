@@ -13,6 +13,7 @@ using namespace std;
 
 void AntManager::newTurn(State& s) {
 	ant_forces.clear(); // TODO can this be done more efficiently
+  // 200x200x4 buffer?
 	for (int antnum = 0; antnum < s.myAnts.size(); antnum++) {
 		vector<pair<int, float> > new_vec; 
 		for (int d = 0; d < TDIRECTIONS; d++) {
@@ -56,7 +57,7 @@ void AntManager::resolve_forces(State& s, LocalData& ld) {
 			if (ld.passable(dest, s)) { // See LocalData.h
 				//cerr << "passable" << endl;
 				s.makeMove(ant_loc, best_direction);
-				ld.moves.push_back(pair<Location, Location>(ant_loc, dest));
+				ld.recordMove(ant_loc, dest);
 				break; // no more moves for this guy
 			}
 		}
