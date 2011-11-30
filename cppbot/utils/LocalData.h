@@ -20,8 +20,13 @@ class LocalData {
 		~LocalData();
     bool** moved_to; // ant moved to here
 		bool** freed; // ant moved out of here
+    
+    // PERSISTENT DATA
     float** last_seen;
-		
+		bool** is_food; // if a cell ever had but we couldn't get to it
+    bool** is_water; // use instead of state.isWater (persistent)
+
+
     void recordMove(Location& start, Location& dest);
     bool passable(Location& loc, State& s); // Tests is a square is okay to move to
 		int turnsSinceSeen(State& s, int row, int col);

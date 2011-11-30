@@ -56,11 +56,11 @@ void ExploreGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	//dump_current_df(state.turn); 
+	dump_current_df(state.turn); 
 }
 
 void ExploreGene::express(State& s, LocalData& ld, AntManager& am) {
-	for (int iter = 0; iter < DISPERSION_ITERATIONS; ++iter) {
+	for (int iter = 0; iter < EXPGENE_DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants

@@ -15,14 +15,20 @@ void LocalData::setup(State& s) {
 	last_seen = new float*[s.rows];
   moved_to = new bool*[s.rows];
 	freed = new bool*[s.rows];
+  is_food = new bool*[s.rows];
+  is_water = new bool*[s.cols];
   for (int rownum = 0; rownum < s.rows; rownum++) {
 		last_seen[rownum] = new float[s.cols];
 		moved_to[rownum] = new bool[s.cols];
     freed[rownum] = new bool[s.cols];
+    is_food[rownum] = new bool[s.cols];
+    is_water[rownum] = new bool[s.cols];
     for (int colnum = 0; colnum < s.cols; colnum++) {
       moved_to[rownum][colnum] = 0;
       freed[rownum][colnum] = 0;
 			last_seen[rownum][colnum] = DEFAULT_TURNS_SINCE_VISIBLE; // set default value
+      is_food[rownum][colnum] = 0;
+      is_water[rownum][colnum] = 0;
 		}
 	}
 }
@@ -41,7 +47,16 @@ void LocalData::newTurn(State& s) {
         moved_to[r][c] = 0; // TODO performance boost by moving this code into 'endturn' section
         freed[r][c] = 0;
 				last_seen[r][c] = s.turn; // set to last seen on current turn
-			}
+      }
+      if (s.grid[r][c].isWater) { // TODO duplicates state but is easier to keep track of
+        is_water[r][c] = 1; // persistent
+      }
+      if (s.grid[r][c].isFood) {
+        is_food[r][c] = 1;
+      }
+      if (!s.grid[r][c].isFood && s.grid[r][c].isVisible) {
+        is_food[r][c] = 0; // someone ate it
+      }
 		}
 	}			
 }

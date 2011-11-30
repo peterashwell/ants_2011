@@ -10,7 +10,7 @@ using namespace std;
 //constructor
 GeneticBot::GeneticBot() {
 	// Redirect stderr and open log file for debugging
-	freopen("debug/errors.txt","w",stderr);
+	if (freopen("debug/errors.txt","w",stderr) == 0); // do nothing;
 	//debug.open("debug/botlog.txt");
 }
 

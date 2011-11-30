@@ -19,13 +19,20 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			Location cell_loc(i, j);
 			// Default center energy from previous iter
       float center_energy = disp_field_prev[i][j];
-			
 			// Compute the energy for the center square
       // Square is more attractive the longer it hasn't been seen
-			if (state.grid[i][j].isFood) {
+      // For food, adjacent cells are equally attractive
+			if (local_data.is_food[i][j]) {
       	center_energy = food_attract;
-				disp_field_curr[i][j] = center_energy;
-				continue;
+        for(int direction = 0; direction < TDIRECTIONS; ++direction) {
+          Location adj = state.getLocation(cell_loc, direction);
+          if(!local_data.is_water[adj.row][adj.col]) // If is passable
+          {
+            disp_field_curr[adj.row][adj.col] = food_attract;
+          }
+        }
+        disp_field_curr[i][j] = food_attract;
+        continue;
 			} 
 
 			// Compute the sum of the adjacent squares and how many were used
@@ -35,14 +42,9 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			for(int direction = 0; direction < TDIRECTIONS; ++direction)
 			{
 				Location adj = state.getLocation(cell_loc, direction);
-				//cerr << adj << " is adjacent to " << cell_loc << endl;
-				int adj_row = adj.row;
-				int adj_col = adj.col;
-
-				if(!state.grid[adj_row][adj_col].isWater) // If is passable
+				if(!local_data.is_water[i][j]) // If is passable
 				{
-
-					adj_sum += disp_field_prev[adj_row][adj_col] - center_energy;
+					adj_sum += disp_field_prev[adj.row][adj.col] - center_energy;
 					++adj_count;
 				}
 			}
@@ -51,14 +53,18 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			if(adj_count > 0) {
 				adj_energy = adj_sum / adj_count;
 			}
-			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
+      float collab_coeff = 1;
+      if (state.grid[i][j].ant == 0) { // TODO define in constants (0 = us)
+        collab_coeff = FOODGENE_COLLAB_COEFF; // moderate competition for food
+      }
+			disp_field_curr[i][j] = collab_coeff * disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	//dump_current_df(state.turn); 
+	dump_current_df(state.turn); 
 }
 
 void FoodGene::express(State& s, LocalData& ld, AntManager& am) {
-	for (int iter = 0; iter < DISPERSION_ITERATIONS; ++iter) {
+	for (int iter = 0; iter < FOODGENE_DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants

@@ -87,7 +87,7 @@ class Visualize:
     self.max_iters = 0
     # Loading data
     self.loadData()
-    self.base = 2 # base for logarithmic scale
+    self.base = 1.3 # base for logarithmic scale
     self.max_energy += 1 # keep in range [1, inf)
     self.max_scaled_energy = math.log(self.max_energy, self.base)
     self.log_scale_max = math.pow(int(math.ceil(math.log(self.max_energy, self.base))), self.base)
@@ -157,7 +157,7 @@ class Visualize:
       pygame.display.update()
     else:
      sum_grid = reduce( self.combine_grids, grids_to_draw)
-     sum_grid.dump(self.screen, self.cell_width, self.log_scale_max)
+     sum_grid.dump(self.screen, self.cell_width, self.log_scale_max, self.base)
 
   def checkEvents(self):
     mouse_pos = pygame.mouse.get_pos()
