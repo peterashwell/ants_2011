@@ -110,7 +110,7 @@ class Visualize:
     fname = "No file loaded yet"
     try:
       for fname in os.listdir(dir):
-        print "loading: {0}".format(fname)
+        #print "loading: {0}".format(fname)
         if fname.split('.')[-1] != "df":
           #print "continuing"
           continue
@@ -119,6 +119,7 @@ class Visualize:
         self.max_iters = max(iter, self.max_iters)
         # Add unseen genes to set
         if gene_id not in self.genes:
+          print "mapped gene {0} to key {1}".format(gene_id, len(self.genes))
           self.genenum_genename[len(self.genes)] = gene_id
           self.genes.append(gene_id)
 
@@ -168,10 +169,8 @@ class Visualize:
       elif event.type == KEYDOWN:
         if event.key == K_ESCAPE:
           pygame.event.post(pygame.event.Event(QUIT))
-        elif event.key == K_0:
-          self.toggle_gene_visible(0)
-        elif event.key == K_1:
-          self.toggle_gene_visible(1)
+        elif event.key in xrange(K_0, K_0 + len(self.genes_visible)):
+          self.toggle_gene_visible(event.key - K_0) 
         elif event.key == K_d:
           self.select_iteration(1)
         elif event.key == K_a:
@@ -181,6 +180,8 @@ class Visualize:
         self.clicked = mouse_pos
     
   def toggle_gene_visible(self, index):
+    print "len gv: {0}".format(len(self.genes_visible))
+    print "index: {0}".format(index)
     if(index >= 0 and index < len(self.genes_visible)):
       self.genes_visible[index] = not self.genes_visible[index]
       print("{0} visible: {1}".format(self.genes[index], self.genes_visible[index]))

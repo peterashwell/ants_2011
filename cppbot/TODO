@@ -1,8 +1,6 @@
 - Clean up repository
-- Add additional functionality to visualizer
-- Add wall history to local game data
-- Add food history to local game data
-- Add collaborative dispersion to food gene
+- Add additional functionality to visualizer including map, ant data etc.
+- Add water mirroring to pocket food sources to improve pick up efficiency
 Simultaneously
 	- Combat genes
 	- Genetic algorithm code
