@@ -1,6 +1,24 @@
 - Clean up repository
 - Add additional functionality to visualizer including map, ant data etc.
+= Build pygame code to investigate ant combat
 - Add water mirroring to pocket food sources to improve pick up efficiency
+- Map recognition code
+- Combat code
+  - Start with dispersion fields:
+    - No impact when approximately tied
+    - Attractive when in much greater numbers
+    - Repulsive when in much smaller numbers
+    - Clustering as a collaboration coefficient, might need tweaking to work
+  - Precise computations
+    - Suicide catching
+    - Less than 4v4 or 5v5 or something -> branch and bound, with lookahead trapping technique
+  - Heuristics
+    - "Owned" squares -> definitely greater than anything opposition can muster maximise our owned vs. their owned
+    - Move ants to maximise self-coverage without giving too much ground
+    - Move ants to maximise average coverage of opposing enemy squares
+    - ??? these are dumb
+  
+   
 Simultaneously
 	- Combat genes
 	- Genetic algorithm code

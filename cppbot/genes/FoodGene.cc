@@ -42,7 +42,8 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			for(int direction = 0; direction < TDIRECTIONS; ++direction)
 			{
 				Location adj = state.getLocation(cell_loc, direction);
-				if(!local_data.is_water[i][j]) // If is passable
+				//cerr << "error loc (in foodgene): " << i << " " << j << endl;
+        if(!local_data.is_water[i][j]) // If is passable
 				{
 					adj_sum += disp_field_prev[adj.row][adj.col] - center_energy;
 					++adj_count;

@@ -16,7 +16,7 @@ void LocalData::setup(State& s) {
   moved_to = new bool*[s.rows];
 	freed = new bool*[s.rows];
   is_food = new bool*[s.rows];
-  is_water = new bool*[s.cols];
+  is_water = new bool*[s.rows];
   for (int rownum = 0; rownum < s.rows; rownum++) {
 		last_seen[rownum] = new float[s.cols];
 		moved_to[rownum] = new bool[s.cols];
@@ -77,10 +77,10 @@ void LocalData::recordMove(Location& source, Location& dest) {
  * TODO what happens if two enemy ants move onto same square?
  */
 bool LocalData::passable(Location& loc, State& s) {
-	int row = loc.row;
+  int row = loc.row;
 	int col = loc.col;
 	// Check if the cell is water
-	if (s.grid[row][col].isWater) {
+	if (is_water[row][col]) {
 		return false;
 	}
 	// Check if the cell is an ant
