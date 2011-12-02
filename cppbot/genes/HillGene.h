@@ -1,5 +1,5 @@
-#ifndef COMBAT_GENE_H
-#define COMBAT_GENE_H
+#ifndef HILL_GENE_H
+#define HILL_GENE_H
 
 using namespace std;
 
@@ -9,17 +9,15 @@ using namespace std;
 #include "../utils/AntManager.h"
 #include "../GENE_PARAMS.h"
 
-class CombatGene : public Gene
+class HillGene : public Gene
 {
 public:
-	CombatGene(int rows, int cols,
-      float enemy_attract = COMBATGENE_ENEMY_ATTRACT,
-      float hill_attract = COMBATGENE_HILL_ATTRACT,
-      float disp_coeff = COMBATGENE_DISP_COEFF,
-      int disp_iters = COMBATGENE_DISP_ITERS
-    ) : Gene("CombatGene", rows, cols)
+	HillGene(int rows, int cols,
+      float hill_attract = HILLGENE_HILL_ATTRACT,
+      float disp_coeff = HILLGENE_DISP_COEFF,
+      int disp_iters = HILLGENE_DISP_ITERS
+    ) : Gene("HillGene", rows, cols)
 	{
-		this->enemy_attract = enemy_attract;
 		this->hill_attract = hill_attract;
     this->disp_coeff = disp_coeff;
     this->dispersion_iterations = disp_iters;
@@ -28,7 +26,7 @@ public:
 	void disperse_once(State& state, LocalData& ld);
 
 private:
-	float enemy_attract, hill_attract, disp_coeff;
+	float hill_attract, disp_coeff;
   int dispersion_iterations;
 };
 

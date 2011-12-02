@@ -6,6 +6,7 @@
 void BruteCombatGene::disperse_once(State& state, LocalData& local_data)
 {
   // Identify ants which can begin a fight
+  // Any ant which is within
 
 
   /*
@@ -59,8 +60,10 @@ void BruteCombatGene::disperse_once(State& state, LocalData& local_data)
 }
 
 void BruteCombatGene::express(State& s, LocalData& ld, AntManager& am) {
+/*
 	for (int iter = 0; iter < dispersion_iterations; ++iter) {
 		disperse_once(s, ld);
 	}
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants
+  */
 }

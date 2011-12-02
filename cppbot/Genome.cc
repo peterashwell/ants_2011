@@ -2,8 +2,9 @@
 #include "utils/State.h"
 #include "utils/AntManager.h"
 #include "genes/FoodGene.h"
-#include "genes/CombatGene.h"
+#include "genes/HillGene.h"
 #include "genes/ExploreGene.h"
+#include "genes/PositionGene.h"
 
 int Genome::size() {
 	return genes.size();
@@ -12,7 +13,8 @@ int Genome::size() {
 void Genome::setup(State& s) {
 	genes.push_back(new ExploreGene(s.rows, s.cols));
   genes.push_back(new FoodGene(s.rows, s.cols));
-  genes.push_back(new CombatGene(s.rows, s.cols));
+  genes.push_back(new PositionGene(s.rows, s.cols));
+  genes.push_back(new HillGene(s.rows, s.cols));
 }
 
 Genome::~Genome() {

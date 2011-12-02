@@ -12,7 +12,7 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 	{
 		for(int j = 0; j < cols; ++j)
 		{
-      if (state.grid[i][j].isWater) { // TODO replace all iswaters with function from localdata
+      if (local_data.is_water[i][j]) { // TODO replace all iswaters with function from localdata
         disp_field_curr[i][j] = 0;
         continue; // Don't compute dispersion for this square
       }
@@ -61,13 +61,13 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = collab_coeff * disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	dump_current_df(state.turn); 
 }
 
 void FoodGene::express(State& s, LocalData& ld, AntManager& am) {
 	for (int iter = 0; iter < FOODGENE_DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}
+	dump_current_df(state.turn); 
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants
 }
 

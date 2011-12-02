@@ -1,9 +1,9 @@
-#include "CombatGene.h"
+#include "HillGene.h"
 
 #include "../utils/State.h"
 #include "../utils/Location.h"
 
-void CombatGene::disperse_once(State& state, LocalData& local_data)
+void HillGene::disperse_once(State& state, LocalData& local_data)
 {
 	// Swap the buffer 
 	swap_disp_buffer();
@@ -11,19 +11,28 @@ void CombatGene::disperse_once(State& state, LocalData& local_data)
 	{
 		for(int j = 0; j < cols; ++j)
 		{
-      if (state.grid[i][j].isWater) { // TODO replace all iswaters with function from localdata
+      if (local_data.is_water[i][j]) { // TODO replace all iswaters with function from localdata
         disp_field_curr[i][j] = 0;
         continue; // Don't compute dispersion for this square
       }
 			Location cell_loc(i, j);
-			// Default center energy from previous iter
-      float center_energy = disp_field_prev[i][j];
+      float center_energy = disp_field_prev[i][j]; // Default - not energy source
 			
-			// Compute the energy for the center square
+      // Hill interaction
+      // Is strongly (locally) collaboratively diffused by ants belonging to that hill
+      // TODO add collaborative diffusion as an additional layer with a different dispersion coefficient
       if (state.grid[i][j].isHill == 1 && state.grid[i][j].hillPlayer != 0) { // enemy hill
         disp_field_curr[i][j] = hill_attract;
         continue;
       }
+
+      // Enemy interaction
+      // Squares which enemy cannot guarantee kills on next turn do not carry dispersion
+      // Squares which link us to vulnerable enemies (enemies attacking < constant) carry attractive force
+      // TODO vary behavior as surround/hold ground depending on terrain and support behind
+      // For now, make our ants try to surround if we have more (with hard-coded advancing)
+      // Retreat if we have less
+      // Hold (no suicides) if we are about equal
 		  //if (state.grid[i][j].ant > 0) { // enemy ant TODO constantize
 			//	disp_field_curr[i][j] = enemy_attract;
 			//	continue;
@@ -50,12 +59,12 @@ void CombatGene::disperse_once(State& state, LocalData& local_data)
 			disp_field_curr[i][j] = disp_coeff * (center_energy + adj_energy);
 		}
 	}
-	dump_current_df(state.turn); 
 }
 
-void CombatGene::express(State& s, LocalData& ld, AntManager& am) {
+void HillGene::express(State& s, LocalData& ld, AntManager& am) {
 	for (int iter = 0; iter < dispersion_iterations; ++iter) {
 		disperse_once(s, ld);
 	}
+	dump_current_df(state.turn); 
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants
 }
