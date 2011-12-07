@@ -1,6 +1,7 @@
 #include "LocalData.h"
 #include "State.h"
 #include "Location.h"
+#include "ClusterCells.h"
 #include "utils.h"
 
 #include <iostream>
@@ -12,7 +13,7 @@ using namespace std;
 void LocalData::setup(State& s) {
 	num_rows = s.rows;
 	num_cols = s.cols;
-	last_seen = new float*[s.rows];
+  last_seen = new float*[s.rows];
   moved_to = new bool*[s.rows];
 	freed = new bool*[s.rows];
   is_food = new bool*[s.rows];
@@ -31,6 +32,7 @@ void LocalData::setup(State& s) {
       is_water[rownum][colnum] = 0;
 		}
 	}
+  cell_clusters = new ClusterCells();
 }
 
 LocalData::~LocalData() {
@@ -41,12 +43,18 @@ LocalData::~LocalData() {
 }
 
 void LocalData::newTurn(State& s) {
+  // TODO performance boost by putting this in end turn or something?
+  vector<Location> new_cells;
   for (int r = 0; r < num_rows; r++) {
 		for (int c = 0; c < num_cols; c++) {
-			if (s.grid[r][c].isVisible) {
-        moved_to[r][c] = 0; // TODO performance boost by moving this code into 'endturn' section
-        freed[r][c] = 0;
-				last_seen[r][c] = s.turn; // set to last seen on current turn
+			moved_to[r][c] = 0;
+      freed[r][c] = 0;
+      if (s.grid[r][c].isVisible) {
+				// Update if has not yet been seen
+        if (last_seen[r][c] == DEFAULT_TURNS_SINCE_VISIBLE) {
+          new_cells.push_back(Location(r,c));
+        }
+        last_seen[r][c] = s.turn; // set to last seen on current turn
       }
       if (s.grid[r][c].isWater) { // TODO duplicates state but is easier to keep track of
         is_water[r][c] = 1; // persistent
@@ -58,7 +66,10 @@ void LocalData::newTurn(State& s) {
         is_food[r][c] = 0; // someone ate it
       }
 		}
-	}			
+	}
+  // Update clusters
+  cell_clusters->add_cells(s, new_cells);
+  cell_clusters->dump_cluster_data(s);
 }
 
 int LocalData::turnsSinceSeen(State& s, int row, int col) {

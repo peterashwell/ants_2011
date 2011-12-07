@@ -12,24 +12,25 @@ using namespace std;
 class PositionGene : public Gene
 {
 public:
-	PositionGene(int rows, int cols,
-      float cluster_disp_coeff = POSGENE_CLUSTER_DISP_COEFF,
-      float cluster_threshold = POSGENE_CLUSTER_THRESHOLD,
-      float cluster_attractiveness = POSGENE_CLUSTER_ATTRACTIVENESS,
-      int cluster_disp_iters = POSGENE_CLUSTER_DISP_ITERS
-    ) : Gene("PositionGene", rows, cols)
+	PositionGene(int rows, int cols) : Gene("PositionGene", rows, cols)
 	{
-    this->cluster_disp_iters = cluster_disp_iters;
-    this->cluster_threshold = cluster_threshold;
-    this->cluster_disp_coeff = cluster_disp_coeff;
-    this->cluster_disp_iters = cluster_disp_iters;
+    _cluster_disp_iters = POSGENE_CLUSTER_DISP_ITERS;
+    _cluster_disp_coeff = POSGENE_CLUSTER_DISP_COEFF;
+    _cluster_threshold = POSGENE_CLUSTER_THRESHOLD;
+    _cluster_attractiveness = POSGENE_CLUSTER_ATTRACTIVENESS;
+    _strat_overlap_radius = POSGENE_STRAT_OVERLAP_RADIUS;
+    _strat_coverage_bound = POSGENE_STRAT_COVERAGE_BOUND;
+    _strat_disp_iters = POSGENE_STRAT_DISP_ITERS;
+    _strat_disp_coeff = POSGENE_STRAT_DISP_COEFF;
 	}
 	void express(State& state, LocalData& ld, AntManager& am);
 	void disperse_clustering(State& state, LocalData& ld);
+  void disperse_localstrat(State& state, LocalData& ld);
   void disperse_once(State& state, LocalData& ld); // NOT USED
 private:
-  float cluster_disp_coeff, cluster_threshold, cluster_attractiveness;
-  int cluster_disp_iters;
+  float _cluster_disp_coeff, _cluster_threshold, _cluster_attractiveness;
+  float _strat_disp_coeff, _strat_overlap_radius, _strat_coverage_bound;
+  int _cluster_disp_iters, _strat_disp_iters;
 };
 
 #endif

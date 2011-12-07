@@ -56,14 +56,24 @@ void Gene::swap_disp_buffer()
 void Gene::dump_current_df(int turn) {
 	ofstream out;
 	stringstream fname;
-	fname << "dflogs/" << id << "_" << turn << ".df";		
+	fname << "../dflogs/" << id << "_" << turn << ".df";
 	out.open(fname.str().c_str());
 	for (int r = 0; r < rows; ++r) {
-		out << disp_field_curr[r][0];
-		for (int c = 1; c < cols; ++c) {
-			out << "," << disp_field_curr[r][c];
+		for (int c = 0; c < cols; ++c) {
+			out << disp_field_curr[r][c];
+      if (c < cols - 1) {
+        out << ",";
+      }
 		}	
 		out << endl;
 	}
 	out.close();
+}
+
+void Gene::clean_current_df() {
+  for (int r = 0; r < rows; ++r) {
+    for (int c = 0; c < cols; ++c) {
+      disp_field_curr[r][c] = 0;
+    }
+  }
 }

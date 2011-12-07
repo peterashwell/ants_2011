@@ -27,6 +27,11 @@ class DispersionGrid:
     self.max_disp = None
     self.min_disp = None
     for r in xrange(self.rows):
+      #print r, lines[r]
+      if lines[r][0] == '#':
+        continue
+      #for c, obj in enumerate(lines[r].split(',')):
+       # print c, obj
       line_data = [float(obj) for obj in lines[r].split(',')]
       self.grid.append(line_data)
       # Check min/max stuff
@@ -110,7 +115,7 @@ class Visualize:
     fname = "No file loaded yet"
     try:
       for fname in os.listdir(dir):
-        #print "loading: {0}".format(fname)
+        print "loading: {0}".format(fname)
         if fname.split('.')[-1] != "df":
           #print "continuing"
           continue

@@ -6,9 +6,38 @@
 void BruteCombatGene::disperse_once(State& state, LocalData& local_data)
 {
   // Identify ants which can begin a fight
-  // Any ant which is within
+  // Any square adjacent to an ant which is within attack radius of a square adjacent to an enemy ant
 
-
+  // First identify the cells adjacent to my ants that are valid moves (not water)
+  // TODO code neatness and efficiency
+  vector<Location> my_moves;
+  vector<Location>::iterator my_ant;
+  for (my_ant = state.myAnts.begin(); my_ant != state.myAnts.end(); ++my_ant) {
+    for (int d = 0; d < TDIRECTIONS; ++d) {
+      Location adj = state.getLocation(*my_ant, d);
+      if (!local_data.is_water[adj.row][adj.col]) {
+        my_moves.push_back(adj);
+      }
+    }
+    // can also keep it still
+    my_moves.push_back(*my_ant); // TODO efficiency
+  }
+  vector<Location> enemy_moves;
+  vector<Location>::iterator enemy_ant;
+  for (enemy_ant = state.enemyAnts.begin(); enemy_ant != state.enemyAnts.end(); ++enemy_ant) {
+    for (int d = 0; d < TDIRECTIONS; ++d) {
+      Location adj = state.getLocation(*enemy_ant, d);
+      if (!local_data.is_water[adj.row][adj.col]) {
+        enemy_moves.push_back(adj);
+      }
+    }
+    enemy_moves.push_back(*enemy_ant); // TODO efficiency
+  }
+  
+  // Filter the two arrays into moves which are potentially in range of each other
+   
+ 
+ 
   /*
 	// Swap the buffer 	
   swap_disp_buffer();

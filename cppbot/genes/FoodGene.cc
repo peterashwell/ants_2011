@@ -18,12 +18,10 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
       }
 			Location cell_loc(i, j);
 			// Default center energy from previous iter
-      float center_energy = disp_field_prev[i][j];
 			// Compute the energy for the center square
       // Square is more attractive the longer it hasn't been seen
       // For food, adjacent cells are equally attractive
 			if (local_data.is_food[i][j]) {
-      	center_energy = food_attract;
         for(int direction = 0; direction < TDIRECTIONS; ++direction) {
           Location adj = state.getLocation(cell_loc, direction);
           if(!local_data.is_water[adj.row][adj.col]) // If is passable
@@ -36,6 +34,7 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 			} 
 
 			// Compute the sum of the adjacent squares and how many were used
+      float center_energy = disp_field_prev[i][j];
 			float adj_sum = 0;
 			int adj_count = 0;
 
@@ -67,8 +66,11 @@ void FoodGene::express(State& s, LocalData& ld, AntManager& am) {
 	for (int iter = 0; iter < FOODGENE_DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}
-	dump_current_df(state.turn); 
+  #ifdef DEBUG_DF
+    dump_current_df(s.turn);
+  #endif
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants
+  clean_current_df();
 }
 
 

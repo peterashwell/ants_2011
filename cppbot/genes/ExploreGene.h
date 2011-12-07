@@ -10,6 +10,7 @@ using namespace std;
 #include "../utils/LocalData.h"
 #include "../utils/AntManager.h"
 #include "../GENE_PARAMS.h"
+
 class ExploreGene : public Gene
 {
 public:

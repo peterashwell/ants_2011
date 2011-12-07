@@ -7,6 +7,7 @@
 
 #include "Location.h"
 #include "State.h"
+#include "ClusterCells.h"
 
 /**
  * Used for storing game data and history not given in State.h
@@ -25,8 +26,8 @@ class LocalData {
     float** last_seen;
 		bool** is_food; // if a cell ever had but we couldn't get to it
     bool** is_water; // use instead of state.isWater (persistent)
-
-
+    ClusterCells* cell_clusters;;
+     
     void recordMove(Location& start, Location& dest);
     bool passable(Location& loc, State& s); // Tests is a square is okay to move to
 		int turnsSinceSeen(State& s, int row, int col);

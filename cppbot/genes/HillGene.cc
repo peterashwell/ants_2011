@@ -65,6 +65,9 @@ void HillGene::express(State& s, LocalData& ld, AntManager& am) {
 	for (int iter = 0; iter < dispersion_iterations; ++iter) {
 		disperse_once(s, ld);
 	}
-	dump_current_df(state.turn); 
+  #ifdef DEBUG_DF
+  dump_current_df(s.turn);
+  #endif
 	am.apply_field(s, disp_field_curr); // Apply current dispersion field to all ants
+  clean_current_df();
 }

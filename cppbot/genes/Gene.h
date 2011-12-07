@@ -17,6 +17,7 @@ class Gene
 		// Switch the dispersion buffers around so we have the prev and curr is to be overwritten
 		void swap_disp_buffer();
 		void dump_current_df(int turn);
+    void clean_current_df();
 	protected:
 		string id;
 		float **disp_field_curr;

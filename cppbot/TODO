@@ -1,8 +1,9 @@
-- Clean up repository
+- 
 - Add additional functionality to visualizer including map, ant data etc.
-= Build pygame code to investigate ant combat
 - Add water mirroring to pocket food sources to improve pick up efficiency
 - Map recognition code
+
+
 - Combat code
   - Start with dispersion fields:
     - No impact when approximately tied
