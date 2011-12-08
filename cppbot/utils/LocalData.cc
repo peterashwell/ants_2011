@@ -32,7 +32,11 @@ void LocalData::setup(State& s) {
       is_water[rownum][colnum] = 0;
 		}
 	}
-  cell_clusters = new ClusterCells();
+  //cell_clusters = new ClusterCells();
+}
+
+Location LocalData::find_nearest_nw_cell(Location& cell) {
+  return Location(0, 0);
 }
 
 LocalData::~LocalData() {
@@ -68,8 +72,8 @@ void LocalData::newTurn(State& s) {
 		}
 	}
   // Update clusters
-  cell_clusters->add_cells(s, new_cells);
-  cell_clusters->dump_cluster_data(s);
+  //cell_clusters->add_cells(s, *this, new_cells);
+  //cell_clusters->dump_cluster_data(s);
 }
 
 int LocalData::turnsSinceSeen(State& s, int row, int col) {

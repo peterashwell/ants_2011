@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 
+class ClusterCells;
 #include "Location.h"
 #include "State.h"
 #include "ClusterCells.h"
@@ -34,8 +35,9 @@ class LocalData {
 		void setup(State& s); // Set up the LocalData for the remainder of the game
 		void newTurn(State& s); // update stuff for new turn
 		std::string dumpMoves();
+		Location find_nearest_nw_cell(Location& cell);
 	private:
-		void updateVisibleData(State& s);	
+    void updateVisibleData(State& s);	
 		static const int DEFAULT_TURNS_SINCE_VISIBLE = -200;
 	// TODO food history
 };
