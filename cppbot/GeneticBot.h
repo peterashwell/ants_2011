@@ -26,11 +26,13 @@ class GeneticBot
 	public: 
 		GeneticBot();
 				
-		void playGame();	//plays a single game of Ants
+		void playGame(string filename);	//plays a single game of Ants
 		
 		void endTurn();		//indicates to the engine that it has made its moves
 
 		void logTime(string message); // logs time elapsed with a message
+		
+		void loadGene(string filename);
 };
 
 #endif

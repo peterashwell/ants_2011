@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 
 #include "utils/State.h"
@@ -16,13 +17,13 @@ GeneticBot::GeneticBot() {
 
 
 //plays a single game of Ants.
-void GeneticBot::playGame()
+void GeneticBot::playGame(string filename = "")
 {
 	//reads the game parameters and sets up
 	cin >> state;
 	Timer timer;	
 	state.setup();
-	genome.setup(state); // GENES DEFINED HERE
+	genome.setup(state, filename); // GENES DEFINED HERE
 	local_data.setup(state);	
 	endTurn();
 
@@ -70,4 +71,3 @@ void GeneticBot::endTurn()
 
 	cout << "go" << endl;
 };
-

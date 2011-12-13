@@ -22,7 +22,7 @@ public:
 	{
 		this->food_attract = food_attract;
 		this->food_collab_coeff = food_collab_coeff;
-    this->disp_coeff = disp_coeff;
+                this->disp_coeff = disp_coeff;
 	}
 	void express(State& state, LocalData& ld, AntManager& am);
 	void disperse_once(State& state, LocalData& ld);

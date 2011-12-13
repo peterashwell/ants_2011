@@ -12,7 +12,16 @@ using namespace std;
 class PositionGene : public Gene
 {
 public:
-	PositionGene(int rows, int cols) : Gene("PositionGene", rows, cols)
+	PositionGene(int rows, int cols,
+	    int posgene_strat_disp_iters = POSGENE_STRAT_DISP_ITERS,
+      float posgene_cluster_disp_coeff = POSGENE_CLUSTER_DISP_COEFF,
+      int posgene_cluster_disp_iters = POSGENE_CLUSTER_DISP_ITERS,
+      int posgene_cluster_threshold = POSGENE_CLUSTER_THRESHOLD,
+      float posgene_cluster_attractiveness = POSGENE_CLUSTER_ATTRACTIVENESS,
+      float posgene_strat_overlap_radius = POSGENE_STRAT_OVERLAP_RADIUS,
+      float posgene_strat_coverage_bound = POSGENE_STRAT_COVERAGE_BOUND,
+      float posgene_strat_disp_coeff = POSGENE_STRAT_DISP_COEFF
+    ) : Gene("PositionGene", rows, cols)
 	{
     _cluster_disp_iters = POSGENE_CLUSTER_DISP_ITERS;
     _cluster_disp_coeff = POSGENE_CLUSTER_DISP_COEFF;

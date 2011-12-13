@@ -63,7 +63,7 @@ void FoodGene::disperse_once(State& state, LocalData& local_data)
 }
 
 void FoodGene::express(State& s, LocalData& ld, AntManager& am) {
-	for (int iter = 0; iter < FOODGENE_DISPERSION_ITERATIONS; ++iter) {
+	for (int iter = 0; iter < DISPERSION_ITERATIONS; ++iter) {
 		disperse_once(s, ld);
 	}
   #ifdef DEBUG_DF
